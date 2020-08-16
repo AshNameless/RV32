@@ -1,0 +1,17 @@
+/************************************************* 
+ 
+Copyright:Call_Me_ZK
+
+File name:mul2t1.v
+
+Author:ZK
+ 
+Date:2020-08-10
+ 
+Description:
+	2选1多路选择器
+**************************************************/
+
+module mul2t1
+
+endmodule

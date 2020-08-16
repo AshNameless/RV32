@@ -1,0 +1,39 @@
+addi sp, x0, 200  //alloc stack pointer and value of n
+addi x10, x0, 10
+jal x1, r_fibonacci  //call function
+jal x0, return
+
+r_fibonacci:
+addi sp, sp,-12  //store the regs which would be used regardless of temporary ones
+sw x1, 8(sp)  //return address of caller
+sw x20, 4(sp)  //x20 store n
+sw x21, 0(sp)  //x21 store f(n-1)
+add x20, x10, x0
+addi x5, x0, 1
+beq x20, x0, n_0  //if n == 0
+beq x20, x5, n_1  //if n == 1
+addi x10, x20, -1
+jal x1, r_fibonacci  //f(n-1)
+add x21, x10, x0
+addi x10, x20, -2
+jal x1, r_fibonacci  //f(n-2)
+add x10, x10, x21  //f(n-1)+f(n-2)
+jal x0, exit
+
+n_0:
+add x10, x0, x0
+jal x0, exit
+
+n_1:
+addi x10, x0, 1
+jal x0, exit
+
+exit:
+lw x21, 0(sp)  //pop the values been pushed
+lw x20, 4(sp)
+lw x1, 8(sp)
+addi sp, sp, 12
+jalr x0, 0(x1)
+
+return:
+add x0, x0, x0

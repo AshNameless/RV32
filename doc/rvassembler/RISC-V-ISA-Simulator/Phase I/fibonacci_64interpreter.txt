@@ -1,0 +1,39 @@
+addi sp, x0, 200
+addi x10, x0, 10
+jal x1, r_fibonacci
+jal x0, return
+
+r_fibonacci:
+addi sp, sp,-12
+sw x1, 8(sp)
+sw x20, 4(sp)
+sw x21, 0(sp)
+add x20, x10, x0
+addi x5, x0, 1
+beq x20, x0, n_0
+beq x20, x5, n_1
+addi x10, x20, -1
+jal x1, r_fibonacci
+add x21, x10, x0
+addi x10, x20, -2
+jal x1, r_fibonacci
+add x10, x10, x21
+jal x0, exit
+
+n_0:
+add x10, x0, x0
+jal x0, exit
+
+n_1:
+addi x10, x0, 1
+jal x0, exit
+
+exit:
+lw x21, 0(sp)
+lw x20, 4(sp)
+lw x1, 8(sp)
+addi sp, sp, 12
+jalr x0, 0(x1)
+
+return:
+add x0, x0, x0

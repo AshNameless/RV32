@@ -1,0 +1,11 @@
+/*
+各种参数
+*/
+`ifndef paras.v
+`defin paras.v
+
+/*
+
+ALU参数宏定义
+
+*/

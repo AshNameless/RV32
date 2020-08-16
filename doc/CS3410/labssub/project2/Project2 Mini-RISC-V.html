@@ -1,0 +1,703 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>CS 3410 Spring 2019 Project 2</title>
+  <link rel="stylesheet" href="/courses/cs3410/2019sp/assets/css/main.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+    integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+  <style type="text/css">
+    table {
+      border-collapse: collapse;
+    }
+
+    @media (min-width:768px) {
+      .indent {
+        margin-left: 2em;
+      }
+    }
+
+    caption {
+      font-size: 80%;
+      padding-bottom: 3px;
+    }
+
+    .code {
+      font-family: monospace;
+    }
+
+    .dark {
+      background-color: grey;
+    }
+
+    #opcodes {
+      width: 40em;
+    }
+
+    #opcodes tr td {
+      font-family: monospace;
+      font-size: 80%;
+      text-align: center;
+      border: 1px solid black;
+      white-space: nowrap;
+    }
+
+    #project-wrapper {
+      position: relative;
+      margin-top: 10px;
+      height: calc(100% - 50px);
+      overflow-y: scroll;
+    }
+
+    .tab-content {
+      padding-top: 1px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#main">Project 2<span class="hidden-sm"> | Pipelined Mini-RISC-V</span></a>
+        </div>
+        <div class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#fibonacci">Fibonacci</a></li>
+            <li><a href="#implementation">Implementation</a></li>
+            <li><a href="#testing">Testing</a></li>
+            <li><a href="#documentation">Documentation</a></li>
+            <li><a href="#help-hints">Help &amp; Hints</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </div><!-- /.navbar -->
+  </header>
+
+  <div id="project-wrapper" data-spy="scroll" data-target="#project-navbar">
+    <div class="container">
+      <div id="main" class="tab-content">
+        <h1>Group Project 2 - Pipelined Mini-RISC-V</h1>
+        <p class="lead">CS 3410 Spring 2019</p>
+        <hr>
+        <p class="lead"><b>Please sign up your design documentation meeting on CMS by:</b>
+          11:59pm, Saturday, February 23rd, 2019</p>
+        <p class="lead"><b>Preliminary design documentation Due:</b> 11:59pm, Thursday, February 28th, 2019</p>
+        <p class="lead"><b>Project Due:</b> 11:59pm, Monday, March 11th, 2019</p>
+        <p><b>Circuit Naming:</b> Your top-level circuit <b>must</b> be named either "RISCV" or "RISCV32"
+          (case-sensitive).</p>
+        <p><b>Late Policy:</b> Two slip days can be used for the final submission. If a slip day is used, it will be
+          used for both partners.</p>
+        <!-- <p>You must work with the same partner for this project and the next. You can change partners for the later projects.</p> -->
+        <p>
+          <font size="5"><b>Warnings:</b>
+            <ul>
+              <li>If you have not done so already, please <a href="../../logisim/logisim-evolution.jar">redownload
+                  Logisim</a> before beginning this project.</li>
+              <ul>
+                <li><b>This Note has been updated: 2/25/2019</b> Your logisim version number should be 2.14.7.5</li>
+                <li>You are not permitted to use any CS 3410 components other than those available in the current
+                  logisim
+                  version.</li>
+              </ul>
+              <li>Commit often. One of the submission requirements will be a copy of your <code>git log</code>.</li>
+              <li>Read the ENTIRE writeup before you begin.</li>
+            </ul>
+          </font>
+        </p>
+        <hr>
+      </div>
+
+      <div id="overview" class="tab-content">
+        <h2>Overview</h2>
+
+        <p>In this project we will implement a subset of the RISCV architecture in Logisim. We will ignore more advanced
+          features such as the RISCV coprocessor instructions and variable length execution instructions for these
+          assignments.</p>
+
+        <p>In this project you will implement a functioning outline of the pipelined processor for a small set of
+          instructions, including: decoding all the instructions you will encounter in this project, implementing most
+          of the RISCV pipeline, correct implementation of arithmetic and logic operations, and simple hazard avoidance
+          for these instructions.</p>
+
+        <p>You will also be expected to use Git throughout this project to maintain version control of your circuit and
+          to ensure that you have an online backup available. At the end of the assignment, you will turn in a log of
+          your git commit history in a text file. There are no specific restrictions on how often you should be
+          committing, but it is highly recommended that you commit often and write meaningful commit messages so that
+          you can restore old versions in case of failure. We will expect your commit log to show you made a genuine
+          effort to accomplish this.</p>
+
+        <p><b>Academic Integrity</b>. As one of the most widely studied architectures, RISCV has a wealth of information
+          available on the web and in textbooks. You may consult any RISCV documentation available to you in order to
+          learn about
+          the instruction set, what each instruction does, etc.; however, we expect your design to be entirely your own,
+          and your
+          submission should cite any significant sources of information you used. If you are unsure if it is okay to
+          borrow from
+          some other source, just ask the TAs. If you are hesitant to ask the TAs or to cite the source, then it is
+          probably not
+          okay. Plagiarism in any form will not be tolerated. It is also your responsibility to make sure your sources
+          match the
+          material we describe here (warning: the top Google hit for "RISCV reference" contains several inaccuracies).
+        </p>
+
+        <h2>What to Submit</h2>
+        <p><b>Note the different due dates.</b></p>
+
+        <ul> <u>By Thursday, February 28th, 2019</u>
+          <li> Schedule a meeting with a TA to present your intended design and/or preliminary design documentation</li>
+          <li> Meet with your TA at your scheduled time to present your intended design.</li>
+          <li> Submit your preliminary design document.</li>
+        </ul>
+
+        <ul> <u>By Monday, March 11th, 2019</u>
+          <li>A single Logisim project file containing your processor and all needed subcomponents.</li>
+          <li>A text file containing your well-commented RISCV assembly test program.</li>
+          <li>A updated design document of your processor.</li>
+          <li>An assembly program containing your Fibonacci implementation.</li>
+          <li>A git commit history obtained using the command <code>git log</code> on your repository.</li>
+        </ul>
+
+      </div>
+
+      <div id="fibonacci" class="tab-content">
+        <h2>Fibonacci</h2>
+
+        <p>In this part of the project you will write a function in assembly in
+          order to test the processor that you will build.</p>
+
+        <p>A <i>Fibonacci sequence</i> is characterized by the fact that every number after the first two is the sum of
+          the two preceding ones: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, ... The sequence <i>F</i> of Fibonacci
+          numbers is defined by the recurrence relation: <i>F</i>(n) = <i>F</i>(n-1) + <i>F</i>(n-2), with seed values
+          <i>F</i>(0)=0 and <i>F</i>(1)=1.
+          You will implement the <i>Fibonacci
+            function</i>, which compute the n-th number, <i>F</i>(n), in the Fibonacci sequence. For instance,
+          <code>Fibonacci(12)</code> returns 144. because the sequence starting at
+          <i>F</i>(0)=0 and <i>F</i>(1)=1, and goes by 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, ... </p>
+
+        <p>There are several ways to compute the n-th Fibonacci number. For this
+          assignment, you will implement a (naive, but counterintuitive) iterative version. Later, we
+          will ask you to implement a recursive version. </p>
+
+        <ul>
+          <li>
+            <p><b>Iterative Fibonacci:</b></p>
+            <pre>
+    int i_Fibonacci(int n) {
+        int f1 = 0;
+        int f2 = 1;
+        int fi;
+
+        if(n == 0) {
+          return 0;
+        }
+
+        if(n == 1) {
+          return 1;
+        }
+
+        for(int i = 2; i <= n; i++) {
+            fi = f1 + f2;
+            f1 = f2;
+            f2 = fi;
+        }
+        return fi;
+    }</pre>
+          </li>
+        </ul>
+
+        <p>
+          You will implement this iterative version of the Fibonacci using
+          RISCV assembly code.
+          <br>
+          Notice that you don't have any control instructions in the Mini-RISCV
+          processor, which will make expressing the for loop and if statements impossible. To work
+          around this, we will simply hardcode <code>n</code> to a particular value
+          and unroll the loop, simulating the arithmetic that would have happened
+          if we had control instructions.
+        </p>
+
+        <ul>
+          <li>
+            <p>As an example, this is what the code looks like if we hardcode <code>n</code> to 3:</p>
+            <pre>
+    int f1 = 0;
+    int f2 = 1;
+    int fi;
+    fi = f1 + f2;
+    f1 = f2;
+    f2 = fi;
+    fi = f1 + f2;
+    f1 = f2;
+    f2 = fi;
+    return fi;</pre>
+          </li>
+        </ul>
+
+        <p>
+          For your implementation of the <b>unrolled</b> version of Fibonacci(4), store <code>f1</code> in register
+          <kbd>x5</kbd>,
+          also known as <kbd>t0</kbd>, store <code>f2</code> in register
+          <kbd>x6</kbd>, also known as <kbd>t1</kbd>, and store <code>fi</code> in register
+          <kbd>x7</kbd>, also known as <kbd>t2</kbd>. Compute the <b>4th</b> Fibonacci number. At the end of your
+          function, instead of
+          returning <code>fi</code>, simply store the value <code>fi</code> in register <kbd>x10</kbd>,
+          also known as <kbd>a0</kbd>.
+        </p>
+
+        <p>
+          Note: if you just store the return value of <code>Fibonacci(4)</code>
+          into <kbd>x10</kbd>, that completely defeats the purpose of the exercise. Submissions that do this will
+          receive no credit.
+          Do not optimize/modify the code beyond removing the control instructions.
+          You may only use the instructions in <a href="#tableA">Table A</a>.
+        </p>
+      </div>
+
+      <div id="implementation" class="tab-content">
+        <h2>RISCV Pipeline</h2>
+
+        <p>You will implement a five-stage RISCV pipeline, which is the most common organization for RISCV and is
+          similar to
+          what is described in the book and in class:</p>
+
+        <ol>
+          <li>Fetch</li>
+          <li>Decode</li>
+          <li>Execute</li>
+          <li>Memory</li>
+          <li>Writeback</li>
+        </ol>
+
+
+
+        <p><b>Memory stage.</b> For this project, the memory stage of the pipeline will just be a passthrough doing
+          nothing.</p>
+
+
+        <h2>What to Implement</h2>
+
+        <p>Implement a five-stage pipelined RISCV processor in Logisim. Your design should contain a program counter, a
+          read-only program memory (ROM), a register file, <i>our</i> ALU, and any other components needed, along with
+          the
+          instruction decode and control circuits needed to connect them all together. The pipeline should: fetch
+          instructions
+          to execute from the program ROM and increment the program counter by 4; decode each instruction; select
+          arguments from
+          the register file; compute results; do nothing in the memory stage; and store results back in the register
+          file.</p>
+
+        <p>Your pipeline must correctly execute all of the instructions in Table A:</p>
+        <div class="indent">
+          <table id="tableA" class="table table-bordered table-condensed table-hover">
+            <thead>
+              <tr>
+                <th>Table A</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Arithmetic</td>
+                <td class="code">ADD, ADDI, SUB, AUIPC</td>
+              </tr>
+              <tr>
+                <td>Logic Operations</td>
+                <td class="code">AND, ANDI, OR, ORI, XOR, XORI, SLT, SLTI, SLTU, SLTIU</td>
+              </tr>
+              <tr>
+                <td>Shifts (constant and variable)</td>
+                <td class="code">SRA, SRAI, SRL, SRLI, SLL, SLLI</td>
+              </tr>
+              <tr>
+                <td>Immediate load</td>
+                <td class="code">LUI</td>
+              </tr>
+              <!-- <tr>
+          <td>Atomic Reads/Writes</td>
+          <td class="code">CSRR, CSRW</td>
+        </tr> -->
+            </tbody>
+          </table>
+        </div>
+        <p>Note that LUI doesn't access memory and so, despite its name, it is more similar to an arithmetic or logic
+          instruction
+          than a memory load instruction.</p>
+
+        <p>Table B contains instructions which should be <b> nonfunctional</b> in this project, so your instruction
+          decoding and control logic must be able to recognize table B instructions, and ensure that they have no effect
+          on the program execution.</p>
+        <div class="indent">
+          <table id="tableB" class="table table-bordered table-condensed table-hover">
+            <thead>
+              <tr>
+                <th>Table B</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Jumps</td>
+                <td class="code">JAL, JALR</td>
+              </tr>
+              <tr>
+                <td>Branches</td>
+                <td class="code">BEQ, BNE, BLT, BGE, BLTU, BGEU</td>
+              </tr>
+              <tr>
+                <td>Memory Load/Store (little endian)</td>
+                <td class="code">LW, LB, SW, SB</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Our testing programs for this project will include a mixture of instructions from both Table A and Table B.
+          When processing one of the instructions of Table B, your implementation is free to do anything as long as: (1)
+          no value in the register file changes and (2) the execution of instructions from Table A are not interfered
+          with in any way. Think carefully about your decode logic to make sure this second condition works out.</p>
+
+        <p><b>Deviation from the RISCV standard:</b> You can ignore any RISCV instruction or feature not mentioned in
+          this document, such as traps, exceptions, and system calls. You can also assume that your processor will never
+          encounter anything but legal instructions from the lists above. There are other RISCV instructions, however
+          you will not be responsible for knowing/implementing them.</p>
+
+        <p>Refer to the RISCV manual linked on the course web site for a full specification of what each of these
+          operations does. Except where noted in here, the RISCV manual is the authoritative specification for this
+          project: information you find elsewhere (e.g. Wikipedia or the book) doesn't count if it contradicts the RISCV
+          manual.</p>
+
+        <p><b>Data Hazard:</b> The trivial solution to data hazards is, of course, stalling. However, the performance of
+          trivial solutions is not optimal. Implement forwarding such that your implementation will handle data hazards
+          without sacrificing performance.</p>
+
+        <h3>Processor Components</h3>
+
+        <p>Build your RISCV processor as a single Logisim circuit file. <b>Do not</b> use Logisim's <i>Project &gt; Load
+            Library &gt; Logisim Library</i>
+          command to import circuits from other Logisim files.</p>
+
+        <p>Your top-level circuit <b>must</b> be named "RISCV" or "RISCV32" (case-sensitive).</p>
+
+        <p>The "CS3410 Components" library folder contains several components you will need, such as a register file, an
+          ALU, an
+          incrementer, and a program memory. <i>You must use these components where applicable, but you may only use one
+            of
+            each. Also note that you should not nest these components too deeply (inside one subcircuit is fine).</i>
+          <a href="../../logisim/components.html">Documentation and instructions for cs3410 components can be found
+            here</a>.</p>
+
+        <p><b>Register file.</b> Don't attempt to create your own register file out of regular Logisim Registers. This
+          one makes debugging and simulation much easier.</p>
+
+        <p><b>ALU.</b> <i>You must use the ALU from this library, rather than your ALU from project 1.</i> Your design
+          may
+          only contain one ALU.</p>
+
+        <p><b>RISCV Program ROM.</b> We will implement a Harvard Architecture design: The Program ROM component will
+          store a read-only copy of the program instructions. The Program ROM component can load and display RISCV
+          assembly language, which helps with debugging and saves you from having to write test programs in machine
+          language.</p>
+
+        <p><b>Incrementer.</b> You must use one (and only one) of these to increment the PC.</p>
+
+        <!--<p><b>Adder</b> You must use one (and only one) of these in the decode stage.</p>-->
+
+        <p><b>Logisim components.</b> You can additionally use any of the components that come with Logisim, such as a
+          Register for the PC, multiplexers, and so on.</p>
+
+      </div>
+
+      <div id="testing" class="tab-content">
+        <h2>Testing</h2>
+
+        <p>
+          Write a test program file for Logisim containing RISCV assembly that fully tests all aspects of your
+          processor; it should be able to be run by loading it into the Program ROM. The test program should demonstrate
+          that the processor's behavior conforms to all specifications given here and in the RISCV reference manual. 
+          <br>
+          This is a critical step, and you should spend a fair amount of time developing a comprehensive test program
+          that exercises all of the different instructions and features of your processor. The program should be well
+          commented, indicating what it is doing (random vs. targeted, and what target) and what results should be
+          expected when running the tests, so that the course staff is convinced of the correctness of your processor.
+          All test cases should be included in a single file, and the quality and thoroughness of the tests will be
+          graded.
+        </p>
+
+        <p>Since the RISCV processor does not use input and output pins in the same way as the ALU, you will not be able
+          to test your cicuit as a whole using test vectors. You must use your RISC-V test program to evaluate the
+          correctness of your processor. However, test vectors may be useful for debugging some of your subcircuits.</p>
+
+        <p>Don't forget to include every possible instruction in your testing program. <b>This includes table B
+            instructions</b>; you must ensure that your processor does nothing when executing any table B instruction,
+          as required.</p>
+      </div>
+
+      <div id="documentation" class="tab-content">
+        <h2>Documentation</h2>
+
+        <p>The design document should include a block diagram showing all the major components in the processor (ALU,
+          Register File, PC, pipeline registers, etc.), and the datapath connections between them. You need not
+          completely draw wires for control logic signals, but should indicate which components take control inputs, and
+          give names to all control signals. Overall, the diagram should be very similar to (and not much more
+          complicated than) the diagrams used in lecture, but with labels for control signals and any relevant data
+          signals. You should provide an explanation for any parts of your processor or any subcomponents that are
+          unusual or potentially confusing.</p>
+
+        <p>Also include a description of your control and instruction decoding logic. For each control logic signal (or
+          group of related control logic signals) you should provide (a) a brief description of what the signal does,
+          e.g. what the values of the control signal mean; and (b) a truth table showing what value the signal takes for
+          each possible opcode.
+        </p>
+
+        <p> You must also schedule a meeting with one of the TAs to discuss about your intended design (more information
+          below). The time schedule is available on CMS. Pick one that works for you <b>and</b> your partner. During the
+          meeting, it may be helpful to <b>bring a printed design document</b>, so you will be prepared to present your
+          design to TA and discuss.</p>
+
+
+        <p>Update your design document as you work on your circuit. Documentation provides you another avenue of
+          communicating your intended design and implementation in the case your circuit has mistakes. For a
+          well-designed, clearly labeled and nicely laid out, completely correct solution, a screenshot of the Logisim
+          circuit itself can serve as a diagram, but, otherwise, use the documentation to clarify and explain any parts
+          of your circuit we might find confusing.</p>
+
+        <p>We have provided a design doc guideline and template to help you with writing the
+          design documentation. The tex source file is also available. Download it from <a
+            href="designdocTemplate.zip">here</a> or from your <a
+            href="https://github.coecis.cornell.edu/cs3410-2019sp-student"> Github repo</a>.</p>
+
+        <p>The point of all this documentation is to give you another avenue of communicating your intended design and
+          implementation in the case your circuit has mistakes. For a well-designed, clearly labeled and nicely laid
+          out,
+          completely correct solution, a screenshot of the Logisim circuit itself can serve as a diagram, but,
+          otherwise, use
+          the documentation to clarify and explain any parts of your circuit we might find confusing.</p>
+      </div>
+
+      <div id="design-doc-meetings" class="tab-content">
+        <h2>Design Doc Meetings</h2>
+
+        <p><b>Each team will have a 20 minute design doc meeting with a member of course staff between Febrary 27th and
+            February 28th.</b></p>
+
+        <p><b>How much of my design doc should be completed before the meeting?</b></p>
+        <p>In general, the more of the design doc you have completed before the meeting, the more helpful the meeting
+          is. That being said, it is more
+          than ok to have questions for your TA about the specifics of your design.</p>
+
+        <p>At the very least, you should come to the design doc meeting with a preliminary plan for implementing
+          pipelining, a diagram outlining the
+          5 stages of your processor as well as a basic description of each, a plan for your decode and control logic,
+          and a general plan for testing. </p>
+
+        <p><b>Design Doc Submission</b></p>
+        <p>You will submit a preliminary design document to CMS by February 28th. This design doc should take into
+          account all of the feedback you received
+          during your design doc meeting as well as any further progress you have made on your processor. This design
+          doc will be graded by the member of course
+          staff you met with. While we realize this design doc may not be entirely complete, we expect it to demonstrate
+          a strong understanding of the project requirements.</p>
+      </div>
+
+      <div id="help-hints" class="tab-content">
+        <h2>Help and Hints</h2>
+
+        <p><b>Help.</b> Ask the instructor, TAs and consultants for help. We also expect to see most students in office
+          hours during the
+          course of the project. Extra hours will be scheduled as needed. Also check Piazza for more help.</p>
+
+        <p><b>Bugs.</b> If you suspect a bug in Logisim or the cs3410 library, ask the course staff for help.</p>
+
+        <p><b>Really, it shows.</b> Do a pencil-and-paper design before implementing in Logisim. We will penalize poorly
+          laid-out designs that are hard to understand.</p>
+
+        <p><b>Read the docs.</b> Refer to the <a href="../../logisim/components.html">components guide</a>,
+          the <a href="../../logisim/logisim_design.html">design guidelines</a>, the <a
+            href="../../logisim/tips_and_tricks.html">tips and tricks page</a>,
+          and the <a href="https://content.riscv.org/wp-content/uploads/2017/05/riscv-spec-v2.2.pdf">RISCV manual</a>
+          often.</p>
+
+        <p><b>What to do first.</b> Don't wait to get started. However, because we are still covering pipelining and
+          pipeline
+          hazards in lecture, you probably will not want to start right in on the final design. The following order of
+          operations might be sensible:</p>
+        <ol>
+          <li>Read the RISCV manual page for every instruction (some have unusual quirks).</li>
+          <li>Start writing test programs, including code both with and without hazards.</li>
+          <li>(After pipelining is covered in lecture) Design on paper, build in Logisim, and begin to test a pipelined
+            CPU
+            that doesn't handle pipeline hazards. Write the documentation as you go.</li>
+          <li>(After pipeline hazards are covered in lecture) Modify the datapath and control logic to handle pipeline
+            hazards.</li>
+        </ol>
+
+        <p><b>Testing. Please make sure you are running Logisim version 2.14.7.5</b>
+          Writing a testing script to help generate assembly instructions is certainly recommended,
+          however, edge cases and test completeness are more important than having thousands of random cases. If you
+          have no edge cases nor specification tests, significant points will be deducted from your final score! Please
+          keep in mind that Course Staff would rather see 50 edge cases than 2000 random cases. But doing both is even
+          better.</p>
+
+        <hr>
+
+        <h3>Project Design Rules and Tips</h3>
+
+        <p><b>Ensure that your circuit sticks to the following rules, as well as the <a
+              href="../../logisim/logisim_design.html">Logisim design guidelines</a> to avoid losing points!</b></p>
+
+        <p><b>cs3410 Components.</b> Do not duplicate any of the provided cs3410 components in your circuit. At most one
+          of each should be used. <i>Note that duplicates of some of the components, such as the register file, will
+            break the autograder, even if placed in an unused subcircuit</i>, so ensure that any extras are removed
+          before submission to avoid losing points.</p>
+
+        <p><b>Clock.</b> You should only have one clock in the entirety of your circuit. Subcircuits requiring a clock
+          signal should use input pins to connect to the processor clock. Your RISCV design should use a rising clock
+          edge to define the boundaries of clock cycles: during the first half of each processor clock cycle the clock
+          is 1; during the second half of each cycle the clock is 0; and the end of the cycle is when clock transitions
+          from 0 to 1. By default, most Logisim memory components (Registers, D Flip-Flops, etc.) are triggered on the
+          rising clock edge, so you can leave them as is. The register file is the only component that may use a falling
+          clock edge, and can be so configured using the attributes panel. In order to avoid read-write hazards, you
+          will either want to change this setting, or negate the clock signal going into the register file (think about
+          why this works).</p>
+
+        <p><b>Comparators</b>, found in the Arithmetic folder in Logisim, may be useful for implementing some of the
+          functionality of the processor. You are allowed to use <b>at most two comparators</b> in your circuit. Points
+          will be deducted if you use more than two comparators.</p>
+
+        <p><b>Demultiplexors</b> should not be needed for this project, and you should avoid using them.</p>
+
+        <p><b>Tunnels</b>, if used at all, should be used sparingly and only when they make your circuit significantly
+          easier to read. You should be able to complete this project without the use of tunnels.</p>
+
+        <p>You may find that <b>combinational analysis</b> is useful in designing your instruction decoding logic.</p>
+        <hr>
+
+        <h3>On Data Hazard Detection</h3>
+        <p>All forwarding logic should be handled in the decode stage. Data hazards are possible when any of the source
+          registers in the decode stage (rs1 and rs2) are the destination registers for the instructions currently in
+          the execute or memory stage.</p>
+
+        <p>To resolve these data hazards, we can forward value from the result_XM or the result_MW pipeline registers.
+          In order to figure out the correct forwarding control logic, we note that forwarding will happen:</p>
+        <pre>
+  1.  only if the forwarding instruction will write to a register
+      EX/MEM.Regwrite, MEM/WB.Regwrite
+  2.  AND only if Rd for that instruction is not $zero
+      EX/MEM.RegisterRd != 0, MEM/WB.RegisterRd != 0, and ID/EX.RegisterRd != 0
+  3.  AND only if forwarding instruction is not a load in MEM stage
+      EX/MEM.MemRead == 0
+  </pre>
+        <p>From the above, we can derive the following forwarding conditions:</p>
+        <b>EX Hazard</b>
+        <pre>
+  if (rs1_D == rd_X) and (rd_X != 0) and (op_X != lw)
+  if (rs2_D == rd_X) and (rd_X != 0) and (op_X != lw)
+</pre>
+        <b>MEM Hazard</b>
+        <pre>
+  if (rs1_D == rd_M) and (rd_M != 0) and (op_M != lw)
+  if (rs2_D == rd_M) and (rd_M != 0) and (op_M != lw)
+</pre>
+        <b>Important Reminders
+        </b>
+        <ul>
+          <li>In the case of hazards happening in both stages, take the value from the stage closest to decode for the
+            value.</li>
+          <li>You might still have to stall for some instruction combinations.</li>
+        </ul>
+        <hr>
+
+        <h3 id="RISCV-assembly-syntax">RISCV (subset) Assembly Syntax</h3>
+
+        <p>The RISCV Program ROM component has a built-in assembler that understands all of the instructions you will
+          implement. The syntax is standard RISCV syntax. Labels are case sensitive, everything else ignores case.
+          Anything
+          following a pound ('<code>#</code>') is a comment. In this project, you will only use a few of the
+          instructions listed
+          here.</p>
+
+        <p>The instruction syntax is the same as given in the RISCV standard. Registers are written
+          as <code>x0</code>, <code>x1</code>, ..., <code>x31</code>, and the destination register goes on the left,
+          followed by source registers and immediate values on the right. Most integer arguments (immediates, shift
+          amounts, jump targets) can be specified in hex (i.e. 0xf28), in decimal (i.e. 264 or -264), or a label. Most
+          constants have some restrictions: jump destinations must have the same upper 4 bits as the <code>PC+4</code>,
+          and must be a multiple of 4; branch destinations must be a multiple of 4 and fit in a signed 18 bit immediate;
+          etc. As a special case, when a branch target is specified symbolically as a label, the assembler will
+          automatically subtract the current PC value to obtain a signed offset.
+        </p>
+
+        <p>By default, the first instruction will be placed at address 0, and subsequent instructions are placed at at
+          addresses 4, 8, 12, etc.</p>
+
+        <p><b>Symbolic register names.</b> The assembler built into the RISCV Program ROM accepts standard RISCV
+          register names:<code>zero, ra, sp, t0-t6, s0-s11, a0-a7, x0-x31</code>.</p>
+
+        <p>Some examples of instructions are: </p>
+        <div class="indent">
+          <table class="table table-bordered table-condensed table-hover">
+            <tbody>
+              <tr>
+                <td> Immediate Arithmetic </td>
+                <td class="code">ADDI x12, x0, PC</td>
+              </tr>
+              <tr>
+                <td> Register Arithmetic </td>
+                <td class="code">ADD x13, x0, x20</td>
+              </tr>
+              <tr>
+                <td> Immediate Load </td>
+                <td class="code">LUI x14, 0x123</td>
+              </tr>
+              <tr>
+                <td> Shifts </td>
+                <td class="code">
+                  SLLI x13, x13, 2 <br>
+                  SLL x15, x14, x3
+                </td>
+              </tr>
+              <tr>
+                <td> Jumps </td>
+                <td class="code">
+                  JAL x31, 0X00004<br>
+                  JALR x5, x8, 0x10<br>
+                </td>
+              </tr>
+              <tr>
+                <td> Branches </td>
+                <td class="code">
+                  BEQ x5, x6, -12 <br>
+                  BNE x5, x6, my_loop_top
+                </td>
+              </tr>
+              <tr>
+                <td> Memory Load/Store </td>
+                <td class="code">
+                  LW x12, -4(x30)<br>
+                  SW x12, 0(x30)
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div style="height: 100px;"></div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A=="
+    crossorigin="anonymous"></script>
+  <script>$('#project-wrapper').scrollspy({ target: '#project-navbar' })</script>
+</body>
+
+</html>

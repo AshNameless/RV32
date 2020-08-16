@@ -1,0 +1,76 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench template that is freely editable to  
+// suit user's needs .Comments are provided in each section to help the user    
+// fill out necessary details.                                                  
+// *****************************************************************************
+// Generated on "08/07/2020 16:45:13"
+                                                                                
+// Verilog Test Bench template for design : regFile
+// 
+// Simulation tool : ModelSim (Verilog)
+// 
+
+`timescale 1 ns/ 1 ps
+module regFile_vlg_tst();
+// test vector input registers
+reg clk;
+reg [4:0] rd_num1;
+reg [4:0] rd_num2;
+reg rst_n;
+reg [31:0] wr_data;
+reg wr_en;
+reg [4:0] wr_num;
+// wires                                               
+wire [31:0]  rd_data1;
+wire [31:0]  rd_data2;
+
+// assign statements (if any)                          
+regFile i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.rd_data1(rd_data1),
+	.rd_data2(rd_data2),
+	.rd_num1(rd_num1),
+	.rd_num2(rd_num2),
+	.rst_n(rst_n),
+	.wr_data(wr_data),
+	.wr_en(wr_en),
+	.wr_num(wr_num)
+);
+
+initial begin
+	clk = 0;
+	rst_n = 0;
+	#(100) rst_n = 1;
+	#(100000) rst_n = 0;
+	#(500) rst_n = 1;
+end
+
+always #(1) clk = ~clk;
+
+always@(posedge clk) begin
+	rd_num1 <= {$random} % 32;
+	rd_num2 <= {$random} % 32;
+	wr_num <= {$random} % 32;
+	wr_data <= $random;
+	wr_en <= {$random} % 2;
+
+end
+
+
+endmodule
+

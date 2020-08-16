@@ -1,0 +1,72 @@
+addi sp, x0, 300
+addi x10, x0, 0
+addi x11, x0, 0
+addi x12, x0, 4
+addi x13, x0, 10
+
+addi x5, x0, 2
+sw x5, 0(x0)
+addi x5, x0, 3
+sw x5, 4(x0)
+addi x5, x0, 4
+sw x5, 8(x0)
+addi x5, x0, 10
+sw x5, 12(x0)
+addi x5, x0, 40
+sw x5, 16(x0)
+
+jal x1, binarySearch
+jal x0, return
+
+binarySearch:
+addi sp, sp, -24
+sw x1, 20(sp)
+sw x24, 16(sp)
+sw x20, 12(sp)
+sw x21, 8(sp)
+sw x22, 4(sp)
+sw x23, 0(sp)
+add x20, x0, x10
+add x21, x0, x11
+add x22, x0, x12
+add x23, x0, x13
+blt x22, x21, false
+sub x24, x22, x21
+addi x5, x0, 1
+srl x24, x24, x5
+add x24, x24, x21
+addi x5, x0, 2
+sll x28, x24, x5
+add x6, x28, x20
+lw x7, 0(x6)
+beq x7, x23, find
+bge x7, x23, mid_is_great
+addi x11, x24, 1
+jal x1, binarySearch 
+jal x0, exit 
+
+
+false:
+addi x10, x0, -1
+jal x0, exit
+
+find:
+add x10, x24, x0
+jal x0, exit
+
+mid_is_great:
+addi x12, x24, -1
+jal x1, binarySearch
+
+exit:
+lw x23, 0(sp)
+lw x22, 4(sp)
+lw x21, 8(sp)
+lw x20, 12(sp)
+lw x24, 16(sp)
+lw x1, 20(sp)
+addi sp, sp, 24
+jalr x0, 0(x1)
+
+return:
+add x0, x0, x0
