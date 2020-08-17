@@ -9,7 +9,7 @@ z2
 cModel Technology
 Z0 dF:/WorkFiles/verilog/RV32/simulation/modelsim
 valt_bidir_buf
-Z1 !s110 1597549171
+Z1 !s110 1597650069
 !i10b 1
 !s100 a6?6cHeC]_[b_;=i8O1hN3
 IUofI^Wm[kO^mZKWNH9=Lg2
@@ -23,7 +23,7 @@ Z6 OL;L;10.5;63
 r1
 !s85 0
 31
-Z7 !s108 1597549171.000000
+Z7 !s108 1597650068.000000
 Z8 !s107 f:/software/quartus13.1/quartus/eda/sim_lib/altera_primitives.v|
 Z9 !s90 -reportprogress|300|-vlog01compat|-work|altera_ver|f:/software/quartus13.1/quartus/eda/sim_lib/altera_primitives.v|
 !i113 0

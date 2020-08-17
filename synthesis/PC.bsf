@@ -45,6 +45,13 @@ applicable agreement for further details.
 		(line (pt 0 64)(pt 16 64)(line_width 3))
 	)
 	(port
+		(pt 0 80)
+		(input)
+		(text "pc_write" (rect 0 0 33 12)(font "Arial" ))
+		(text "pc_write" (rect 21 75 54 87)(font "Arial" ))
+		(line (pt 0 80)(pt 16 80)(line_width 1))
+	)
+	(port
 		(pt 272 32)
 		(output)
 		(text "pc_out[PC_width-1..0]" (rect 0 0 86 12)(font "Arial" ))

@@ -26,7 +26,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_ver {f:/software/quartus13.1/quartus/eda/sim_lib/altera_primitives.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:31 on Aug 16,2020
+# Start time: 15:41:08 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work altera_ver f:/software/quartus13.1/quartus/eda/sim_lib/altera_primitives.v 
 # -- Compiling module global
 # -- Compiling module carry
@@ -104,7 +104,7 @@
 # 	alt_iobuf_diff
 # 	alt_bidir_diff
 # 	alt_bidir_buf
-# End time: 11:39:31 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:10 on Aug 17,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/lpm_ver
@@ -115,7 +115,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work lpm_ver {f:/software/quartus13.1/quartus/eda/sim_lib/220model.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:31 on Aug 16,2020
+# Start time: 15:41:10 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work lpm_ver f:/software/quartus13.1/quartus/eda/sim_lib/220model.v 
 # -- Compiling module LPM_MEMORY_INITIALIZATION
 # -- Compiling module LPM_HINT_EVALUATION
@@ -179,7 +179,7 @@
 # 	lpm_inpad
 # 	lpm_outpad
 # 	lpm_bipad
-# End time: 11:39:31 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:10 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/sgate_ver
@@ -190,7 +190,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work sgate_ver {f:/software/quartus13.1/quartus/eda/sim_lib/sgate.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:32 on Aug 16,2020
+# Start time: 15:41:11 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work sgate_ver f:/software/quartus13.1/quartus/eda/sim_lib/sgate.v 
 # -- Compiling module oper_add
 # -- Compiling module oper_addsub
@@ -232,7 +232,7 @@
 # 	oper_decoder
 # 	oper_bus_mux
 # 	oper_latch
-# End time: 11:39:32 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:11 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_mf_ver
@@ -243,7 +243,7 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work altera_mf_ver {f:/software/quartus13.1/quartus/eda/sim_lib/altera_mf.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:33 on Aug 16,2020
+# Start time: 15:41:12 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work altera_mf_ver f:/software/quartus13.1/quartus/eda/sim_lib/altera_mf.v 
 # -- Compiling module lcell
 # -- Compiling module ALTERA_MF_MEMORY_INITIALIZATION
@@ -368,7 +368,7 @@
 # 	altserial_flash_loader
 # 	sld_virtual_jtag_basic
 # 	altsource_probe
-# End time: 11:39:34 on Aug 16,2020, Elapsed time: 0:00:01
+# End time: 15:41:13 on Aug 17,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/altera_lnsim_ver
@@ -379,7 +379,7 @@
 # Modifying modelsim.ini
 # vlog -sv -work altera_lnsim_ver {f:/software/quartus13.1/quartus/eda/sim_lib/altera_lnsim.sv}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:35 on Aug 16,2020
+# Start time: 15:41:14 on Aug 17,2020
 # vlog -reportprogress 300 -sv -work altera_lnsim_ver f:/software/quartus13.1/quartus/eda/sim_lib/altera_lnsim.sv 
 # -- Compiling package altera_lnsim_functions
 # -- Compiling package altera_generic_pll_functions
@@ -442,7 +442,7 @@
 # 	altera_pll_reconfig_tasks
 # 	altera_syncram
 # 	altera_pll
-# End time: 11:39:35 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:15 on Aug 17,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_ver
@@ -453,23 +453,23 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_ver {f:/software/quartus13.1/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:36 on Aug 16,2020
+# Start time: 15:41:16 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver f:/software/quartus13.1/quartus/eda/sim_lib/mentor/cyclonev_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 11:39:38 on Aug 16,2020, Elapsed time: 0:00:02
+# End time: 15:41:19 on Aug 17,2020, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {f:/software/quartus13.1/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:38 on Aug 16,2020
+# Start time: 15:41:19 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver f:/software/quartus13.1/quartus/eda/sim_lib/mentor/cyclonev_hmi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 11:39:40 on Aug 16,2020, Elapsed time: 0:00:02
+# End time: 15:41:20 on Aug 17,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_ver {f:/software/quartus13.1/quartus/eda/sim_lib/cyclonev_atoms.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:40 on Aug 16,2020
+# Start time: 15:41:20 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_ver f:/software/quartus13.1/quartus/eda/sim_lib/cyclonev_atoms.v 
 # -- Compiling UDP CYCLONEV_PRIM_DFFE
 # -- Compiling UDP CYCLONEV_PRIM_DFFEAS
@@ -609,7 +609,7 @@
 # 	cyclonev_mem_phy
 # 	cyclonev_oscillator
 # 	cyclonev_hps_interface_fpga2sdram
-# End time: 11:39:40 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:21 on Aug 17,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_hssi_ver
@@ -620,15 +620,15 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_hssi_ver {f:/software/quartus13.1/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:41 on Aug 16,2020
+# Start time: 15:41:22 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver f:/software/quartus13.1/quartus/eda/sim_lib/mentor/cyclonev_hssi_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 11:39:42 on Aug 16,2020, Elapsed time: 0:00:01
+# End time: 15:41:24 on Aug 17,2020, Elapsed time: 0:00:02
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_hssi_ver {f:/software/quartus13.1/quartus/eda/sim_lib/cyclonev_hssi_atoms.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:42 on Aug 16,2020
+# Start time: 15:41:24 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_hssi_ver f:/software/quartus13.1/quartus/eda/sim_lib/cyclonev_hssi_atoms.v 
 # -- Compiling module cyclonev_hssi_8g_pcs_aggregate
 # -- Compiling module cyclonev_hssi_8g_rx_pcs
@@ -728,7 +728,7 @@
 # 	arriav_hssi_avmm_interface
 # 	arriav_hssi_pma_hi_pmaif
 # 	arriav_hssi_pma_hi_xcvrif
-# End time: 11:39:43 on Aug 16,2020, Elapsed time: 0:00:01
+# End time: 15:41:24 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlib verilog_libs/cyclonev_pcie_hip_ver
@@ -739,21 +739,21 @@
 # Modifying modelsim.ini
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {f:/software/quartus13.1/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:43 on Aug 16,2020
+# Start time: 15:41:25 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver f:/software/quartus13.1/quartus/eda/sim_lib/mentor/cyclonev_pcie_hip_atoms_ncrypt.v 
 # 
 # Top level modules:
-# End time: 11:39:46 on Aug 16,2020, Elapsed time: 0:00:03
+# End time: 15:41:28 on Aug 17,2020, Elapsed time: 0:00:03
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work cyclonev_pcie_hip_ver {f:/software/quartus13.1/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:46 on Aug 16,2020
+# Start time: 15:41:28 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work cyclonev_pcie_hip_ver f:/software/quartus13.1/quartus/eda/sim_lib/cyclonev_pcie_hip_atoms.v 
 # -- Compiling module arriav_hd_altpe2_hip_top
 # 
 # Top level modules:
 # 	arriav_hd_altpe2_hip_top
-# End time: 11:39:46 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:28 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # if {[file exists rtl_work]} {
@@ -765,220 +765,300 @@
 # vmap work rtl_work 
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/non_pipeline.v}
+# vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/pipeline.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:46 on Aug 16,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/non_pipeline.v 
-# -- Compiling module non_pipeline
+# Start time: 15:41:29 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/pipeline.v 
+# -- Compiling module pipeline
 # 
 # Top level modules:
-# 	non_pipeline
-# End time: 11:39:46 on Aug 16,2020, Elapsed time: 0:00:00
+# 	pipeline
+# End time: 15:41:29 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/regnumDecoder.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:46 on Aug 16,2020
+# Start time: 15:41:29 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/regnumDecoder.v 
 # -- Compiling module regnumDecoder
 # 
 # Top level modules:
 # 	regnumDecoder
-# End time: 11:39:46 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:29 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/regFile.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:47 on Aug 16,2020
+# Start time: 15:41:29 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/regFile.v 
 # -- Compiling module regFile
 # 
 # Top level modules:
 # 	regFile
-# End time: 11:39:47 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:29 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/PC.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:47 on Aug 16,2020
+# Start time: 15:41:29 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/PC.v 
 # -- Compiling module PC
 # 
 # Top level modules:
 # 	PC
-# End time: 11:39:47 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:29 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/paras.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:47 on Aug 16,2020
+# Start time: 15:41:29 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/paras.v 
-# End time: 11:39:47 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:29 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/mul3t1.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:47 on Aug 16,2020
+# Start time: 15:41:29 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/mul3t1.v 
 # -- Compiling module mul3t1
 # 
 # Top level modules:
 # 	mul3t1
-# End time: 11:39:47 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:29 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/mul2t1.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:47 on Aug 16,2020
+# Start time: 15:41:29 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/mul2t1.v 
 # -- Compiling module mul2t1
 # 
 # Top level modules:
 # 	mul2t1
-# End time: 11:39:47 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:30 on Aug 17,2020, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/memory.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:47 on Aug 16,2020
+# Start time: 15:41:30 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/memory.v 
 # -- Compiling module memory
 # ** Warning: F:/WorkFiles/verilog/RV32/src/memory.v(41): (vlog-2256) Event expressions should result in a singular type.
 # 
 # Top level modules:
 # 	memory
-# End time: 11:39:47 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:30 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 1
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/LSBextract.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:47 on Aug 16,2020
+# Start time: 15:41:30 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/LSBextract.v 
 # -- Compiling module LSBextract
 # 
 # Top level modules:
 # 	LSBextract
-# End time: 11:39:47 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:30 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/instMem.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:47 on Aug 16,2020
+# Start time: 15:41:30 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/instMem.v 
 # -- Compiling module instMem
 # 
 # Top level modules:
 # 	instMem
-# End time: 11:39:47 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:30 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/immGen.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:47 on Aug 16,2020
+# Start time: 15:41:30 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/immGen.v 
 # -- Compiling module immGen
 # 
 # Top level modules:
 # 	immGen
-# End time: 11:39:48 on Aug 16,2020, Elapsed time: 0:00:01
+# End time: 15:41:30 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/dataModifier.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:48 on Aug 16,2020
+# Start time: 15:41:30 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/dataModifier.v 
 # -- Compiling module dataModifier
 # 
 # Top level modules:
 # 	dataModifier
-# End time: 11:39:48 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:30 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/comparator.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:48 on Aug 16,2020
+# Start time: 15:41:30 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/comparator.v 
 # -- Compiling module comparator
 # 
 # Top level modules:
 # 	comparator
-# End time: 11:39:48 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:30 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/ALUSaGen.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:48 on Aug 16,2020
+# Start time: 15:41:30 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/ALUSaGen.v 
 # -- Compiling module ALUSaGen
 # 
 # Top level modules:
 # 	ALUSaGen
-# End time: 11:39:48 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:30 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/adder.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:48 on Aug 16,2020
+# Start time: 15:41:31 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/adder.v 
 # -- Compiling module adder
 # 
 # Top level modules:
 # 	adder
-# End time: 11:39:48 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:31 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs {F:/WorkFiles/verilog/RV32/src/pipeline_regs/IFID.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 15:41:31 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs" F:/WorkFiles/verilog/RV32/src/pipeline_regs/IFID.v 
+# -- Compiling module IFID
+# 
+# Top level modules:
+# 	IFID
+# End time: 15:41:31 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs {F:/WorkFiles/verilog/RV32/src/pipeline_regs/IDEX.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 15:41:31 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs" F:/WorkFiles/verilog/RV32/src/pipeline_regs/IDEX.v 
+# -- Compiling module IDEX
+# 
+# Top level modules:
+# 	IDEX
+# End time: 15:41:31 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs {F:/WorkFiles/verilog/RV32/src/pipeline_regs/EXMEM.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 15:41:31 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs" F:/WorkFiles/verilog/RV32/src/pipeline_regs/EXMEM.v 
+# -- Compiling module EXMEM
+# 
+# Top level modules:
+# 	EXMEM
+# End time: 15:41:31 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs {F:/WorkFiles/verilog/RV32/src/pipeline_regs/MEMWB.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 15:41:31 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs" F:/WorkFiles/verilog/RV32/src/pipeline_regs/MEMWB.v 
+# -- Compiling module MEMWB
+# 
+# Top level modules:
+# 	MEMWB
+# End time: 15:41:31 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/foward.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 15:41:31 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/foward.v 
+# -- Compiling module foward
+# 
+# Top level modules:
+# 	foward
+# End time: 15:41:31 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/hazardDetect.v}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 15:41:31 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/hazardDetect.v 
+# -- Compiling module hazardDetect
+# 
+# Top level modules:
+# 	hazardDetect
+# End time: 15:41:31 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/control.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:48 on Aug 16,2020
+# Start time: 15:41:31 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/control.v 
 # -- Compiling module control
 # 
 # Top level modules:
 # 	control
-# End time: 11:39:48 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:31 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/ALUctl.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:48 on Aug 16,2020
+# Start time: 15:41:32 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/ALUctl.v 
 # -- Compiling module ALUctl
 # 
 # Top level modules:
 # 	ALUctl
-# End time: 11:39:48 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:32 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/ALU.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:48 on Aug 16,2020
+# Start time: 15:41:32 on Aug 17,2020
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/ALU.v 
 # -- Compiling module ALU
 # 
 # Top level modules:
 # 	ALU
-# End time: 11:39:48 on Aug 16,2020, Elapsed time: 0:00:00
+# End time: 15:41:32 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim {F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim/non_pipeline.vt}
+# vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/branchHandler.v}
 # Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
-# Start time: 11:39:48 on Aug 16,2020
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim" F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim/non_pipeline.vt 
-# -- Compiling module non_pipeline_vlg_tst
+# Start time: 15:41:32 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" F:/WorkFiles/verilog/RV32/src/branchHandler.v 
+# -- Compiling module branchHandler
 # 
 # Top level modules:
-# 	non_pipeline_vlg_tst
-# End time: 11:39:49 on Aug 16,2020, Elapsed time: 0:00:01
+# 	branchHandler
+# End time: 15:41:32 on Aug 17,2020, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  non_pipeline_vlg_tst
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" non_pipeline_vlg_tst 
-# Start time: 11:39:49 on Aug 16,2020
+# vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim {F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim/pipeline.vt}
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 15:41:32 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim" F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim/pipeline.vt 
+# -- Compiling module pipeline_vlg_tst
+# 
+# Top level modules:
+# 	pipeline_vlg_tst
+# End time: 15:41:32 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  pipeline_vlg_tst
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs=""+acc"" pipeline_vlg_tst 
+# Start time: 15:41:33 on Aug 17,2020
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: F:/WorkFiles/verilog/RV32/src/non_pipeline.v(242): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_inst9'.  Expected 6, found 5.
-# ** Warning: F:/WorkFiles/verilog/RV32/src/non_pipeline.v(242): (vopt-2718) [TFMPC] - Missing connection for port 'V'.
-# Loading work.non_pipeline_vlg_tst(fast)
-# Loading work.non_pipeline(fast)
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(147): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_inst12'.  Expected 13, found 11.
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(147): (vopt-2718) [TFMPC] - Missing connection for port 'PC_src'.
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(147): (vopt-2718) [TFMPC] - Missing connection for port 'AB_relation'.
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(215): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_inst15'.  Expected 6, found 5.
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(215): (vopt-2718) [TFMPC] - Missing connection for port 'V'.
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
 # Loading work.PC(fast)
 # Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
 # Loading work.ALUctl(fast)
-# Loading work.ALUSaGen(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
 # Loading work.comparator(fast)
 # Loading work.adder(fast)
-# Loading work.mul2t1(fast)
-# Loading work.mul3t1(fast)
 # Loading work.LSBextract(fast)
-# Loading work.regnumDecoder(fast)
-# Loading work.memory(fast)
-# Loading work.control(fast)
-# Loading work.regFile(fast)
-# Loading work.dataModifier(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
 # Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
 # Loading work.immGen(fast)
-# Loading work.ALU(fast)
 # 
 # add wave *
 # 
@@ -988,35 +1068,1385 @@
 # .main_pane.objects.interior.cs.body.tree
 # run 1 us
 quit -sim
-# End time: 11:41:13 on Aug 16,2020, Elapsed time: 0:01:24
-# Errors: 0, Warnings: 2
-vsim -voptargs=+acc work.non_pipeline_vlg_tst
-# vsim -voptargs="+acc" work.non_pipeline_vlg_tst 
-# Start time: 11:41:17 on Aug 16,2020
+# End time: 15:42:06 on Aug 17,2020, Elapsed time: 0:00:33
+# Errors: 0, Warnings: 5
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 15:42:10 on Aug 17,2020
 # ** Note: (vsim-3812) Design is being optimized...
-# ** Warning: F:/WorkFiles/verilog/RV32/src/non_pipeline.v(242): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_inst9'.  Expected 6, found 5.
-# ** Warning: F:/WorkFiles/verilog/RV32/src/non_pipeline.v(242): (vopt-2718) [TFMPC] - Missing connection for port 'V'.
-# Loading work.non_pipeline_vlg_tst(fast)
-# Loading work.non_pipeline(fast)
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(147): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_inst12'.  Expected 13, found 11.
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(147): (vopt-2718) [TFMPC] - Missing connection for port 'PC_src'.
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(147): (vopt-2718) [TFMPC] - Missing connection for port 'AB_relation'.
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(215): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_inst15'.  Expected 6, found 5.
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(215): (vopt-2718) [TFMPC] - Missing connection for port 'V'.
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
 # Loading work.PC(fast)
 # Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
 # Loading work.ALUctl(fast)
-# Loading work.ALUSaGen(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
 # Loading work.comparator(fast)
 # Loading work.adder(fast)
-# Loading work.mul2t1(fast)
-# Loading work.mul3t1(fast)
 # Loading work.LSBextract(fast)
-# Loading work.regnumDecoder(fast)
-# Loading work.memory(fast)
-# Loading work.control(fast)
-# Loading work.regFile(fast)
-# Loading work.dataModifier(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
 # Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
 # Loading work.immGen(fast)
+add wave -position insertpoint  \
+sim:/pipeline_vlg_tst/i1/b2v_inst/clk \
+sim:/pipeline_vlg_tst/i1/b2v_inst/rst_n \
+sim:/pipeline_vlg_tst/i1/b2v_inst/pc_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst/pc_out
+add wave -position insertpoint  \
+sim:/pipeline_vlg_tst/i1/b2v_inst2/PC_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst2/PC4_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst2/inst_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst2/rd_num1_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst2/rd_num2_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst2/wr_num_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst2/PC_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst2/PC4_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst2/inst_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst2/rd_num1_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst2/rd_num2_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst2/wr_num_out
+add wave -position insertpoint  \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/PC_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/PC4_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/inst_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rd_num1_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rd_num2_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/wr_num_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rs1_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rs2_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/imm_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/ALUop_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/ALUsrc_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/comp_unsigned_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/ALU_out_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/sb_w_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/memory_rd_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/memory_wr_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/lb_w_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/reg_write_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/reg_wr_src_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/PC_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/PC4_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/inst_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rd_num1_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rd_num2_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/wr_num_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rs1_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rs2_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/imm_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/ALUop_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/ALUsrc_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/comp_unsigned_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/ALU_out_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/sb_w_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/memory_rd_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/memory_wr_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/lb_w_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/reg_write_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/reg_wr_src_out
+# Break key hit
+quit -sim
+# End time: 15:43:36 on Aug 17,2020, Elapsed time: 0:01:26
+# Errors: 0, Warnings: 5
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 15:43:37 on Aug 17,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
 # Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+add wave -position insertpoint sim:/pipeline_vlg_tst/i1/b2v_inst/*
+add wave -position insertpoint sim:/pipeline_vlg_tst/i1/b2v_inst2/*
+add wave -position insertpoint  \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/PC_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/PC4_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/inst_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rd_num1_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rd_num2_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/wr_num_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rs1_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rs2_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/imm_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/ALUop_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/ALUsrc_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/comp_unsigned_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/ALU_out_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/sb_w_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/memory_rd_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/memory_wr_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/lb_w_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/reg_write_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/reg_wr_src_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/PC_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/PC4_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/inst_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rd_num1_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rd_num2_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/wr_num_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rs1_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/rs2_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/imm_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/ALUop_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/ALUsrc_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/comp_unsigned_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/ALU_out_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/sb_w_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/memory_rd_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/memory_wr_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/lb_w_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/reg_write_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst14/reg_wr_src_out
+add wave -position insertpoint  \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/PC4_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/wr_num_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/rs2_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/ALU_result_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/sb_w_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/memory_rd_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/memory_wr_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/lb_w_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/reg_write_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/reg_wr_src_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/wr_num_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/rs2_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/ALU_result_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/sb_w_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/memory_rd_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/memory_wr_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/lb_w_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/reg_write_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst26/reg_wr_src_out
+add wave -position insertpoint  \
+sim:/pipeline_vlg_tst/i1/b2v_inst30/wr_num_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst30/ALU_result_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst30/memory_data_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst30/reg_write_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst30/reg_wr_src_in \
+sim:/pipeline_vlg_tst/i1/b2v_inst30/wr_num_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst30/wr_data_out \
+sim:/pipeline_vlg_tst/i1/b2v_inst30/reg_write_out
+add wave -position insertpoint  \
+sim:/pipeline_vlg_tst/i1/b2v_inst31/EX_rs1 \
+sim:/pipeline_vlg_tst/i1/b2v_inst31/EX_rs2 \
+sim:/pipeline_vlg_tst/i1/b2v_inst31/MEM_rd \
+sim:/pipeline_vlg_tst/i1/b2v_inst31/WB_rd \
+sim:/pipeline_vlg_tst/i1/b2v_inst31/MEM_regwr \
+sim:/pipeline_vlg_tst/i1/b2v_inst31/WB_regwr \
+sim:/pipeline_vlg_tst/i1/b2v_inst31/EX_rs1src \
+sim:/pipeline_vlg_tst/i1/b2v_inst31/EX_rs2src
+add wave -position insertpoint  \
+sim:/pipeline_vlg_tst/i1/b2v_inst32/ID_rs1 \
+sim:/pipeline_vlg_tst/i1/b2v_inst32/ID_rs2 \
+sim:/pipeline_vlg_tst/i1/b2v_inst32/EX_rd \
+sim:/pipeline_vlg_tst/i1/b2v_inst32/EX_memread \
+sim:/pipeline_vlg_tst/i1/b2v_inst32/hazard
+run 1us
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf F:/WorkFiles/verilog/RV32/simulation/modelsim/wave.do
+quit -sim
+# End time: 15:52:42 on Aug 17,2020, Elapsed time: 0:09:05
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 15:53:58 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt 
+# -- Compiling module pipeline_vlg_tst
+# 
+# Top level modules:
+# 	pipeline_vlg_tst
+# End time: 15:53:58 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 15:53:59 on Aug 17,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+do wave.do
+run 1us
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf F:/WorkFiles/verilog/RV32/simulation/modelsim/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf F:/WorkFiles/verilog/RV32/simulation/modelsim/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf F:/WorkFiles/verilog/RV32/simulation/modelsim/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf F:/WorkFiles/verilog/RV32/simulation/modelsim/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf F:/WorkFiles/verilog/RV32/simulation/modelsim/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf F:/WorkFiles/verilog/RV32/simulation/modelsim/wave.do
+quit -sim
+# End time: 16:09:33 on Aug 17,2020, Elapsed time: 0:15:34
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/regnumDecoder.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:08 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/regnumDecoder.v 
+# -- Compiling module regnumDecoder
+# 
+# Top level modules:
+# 	regnumDecoder
+# End time: 16:12:08 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/regFile.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:08 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/regFile.v 
+# -- Compiling module regFile
+# 
+# Top level modules:
+# 	regFile
+# End time: 16:12:08 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:08 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt 
+# -- Compiling module pipeline_vlg_tst
+# 
+# Top level modules:
+# 	pipeline_vlg_tst
+# End time: 16:12:08 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:08 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline.v 
+# -- Compiling module pipeline
+# 
+# Top level modules:
+# 	pipeline
+# End time: 16:12:09 on Aug 17,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/PC.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:09 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/PC.v 
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# End time: 16:12:09 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/mul3t1.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:09 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/mul3t1.v 
+# -- Compiling module mul3t1
+# 
+# Top level modules:
+# 	mul3t1
+# End time: 16:12:09 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/mul2t1.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:09 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/mul2t1.v 
+# -- Compiling module mul2t1
+# 
+# Top level modules:
+# 	mul2t1
+# End time: 16:12:09 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/MEMWB.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:09 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/MEMWB.v 
+# -- Compiling module MEMWB
+# 
+# Top level modules:
+# 	MEMWB
+# End time: 16:12:09 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/memory.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:09 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/memory.v 
+# -- Compiling module memory
+# ** Warning: F:/WorkFiles/verilog/RV32/src/memory.v(41): (vlog-2256) Event expressions should result in a singular type.
+# 
+# Top level modules:
+# 	memory
+# End time: 16:12:09 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/LSBextract.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:10 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/LSBextract.v 
+# -- Compiling module LSBextract
+# 
+# Top level modules:
+# 	LSBextract
+# End time: 16:12:10 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/instMem.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:10 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/instMem.v 
+# -- Compiling module instMem
+# 
+# Top level modules:
+# 	instMem
+# End time: 16:12:10 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/immGen.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:10 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/immGen.v 
+# -- Compiling module immGen
+# 
+# Top level modules:
+# 	immGen
+# End time: 16:12:10 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/IFID.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:10 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/IFID.v 
+# -- Compiling module IFID
+# 
+# Top level modules:
+# 	IFID
+# End time: 16:12:10 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/IDEX.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:10 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/IDEX.v 
+# -- Compiling module IDEX
+# 
+# Top level modules:
+# 	IDEX
+# End time: 16:12:10 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/hazardDetect.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:10 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/hazardDetect.v 
+# -- Compiling module hazardDetect
+# 
+# Top level modules:
+# 	hazardDetect
+# End time: 16:12:10 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/foward.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:11 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/foward.v 
+# -- Compiling module foward
+# 
+# Top level modules:
+# 	foward
+# End time: 16:12:11 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/EXMEM.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:11 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/EXMEM.v 
+# -- Compiling module EXMEM
+# 
+# Top level modules:
+# 	EXMEM
+# End time: 16:12:11 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/dataModifier.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:11 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/dataModifier.v 
+# -- Compiling module dataModifier
+# 
+# Top level modules:
+# 	dataModifier
+# End time: 16:12:11 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/control.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:11 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/control.v 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 16:12:11 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/comparator.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:11 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/comparator.v 
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# End time: 16:12:11 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/branchHandler.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:11 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/branchHandler.v 
+# -- Compiling module branchHandler
+# 
+# Top level modules:
+# 	branchHandler
+# End time: 16:12:11 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/ALUSaGen.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:11 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/ALUSaGen.v 
+# -- Compiling module ALUSaGen
+# 
+# Top level modules:
+# 	ALUSaGen
+# End time: 16:12:11 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/ALUctl.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:12 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/ALUctl.v 
+# -- Compiling module ALUctl
+# 
+# Top level modules:
+# 	ALUctl
+# End time: 16:12:12 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/ALU.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:12 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 16:12:12 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/adder.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 16:12:12 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/adder.v 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 16:12:12 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 16:12:14 on Aug 17,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(147): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_inst12'.  Expected 13, found 11.
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(147): (vopt-2718) [TFMPC] - Missing connection for port 'PC_src'.
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(147): (vopt-2718) [TFMPC] - Missing connection for port 'AB_relation'.
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(215): (vopt-2685) [TFMPC] - Too few port connections for 'b2v_inst15'.  Expected 6, found 5.
+# ** Warning: F:/WorkFiles/verilog/RV32/src/pipeline.v(215): (vopt-2718) [TFMPC] - Missing connection for port 'V'.
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
 do wave.do
 run 1us
 quit -sim
-# End time: 11:41:49 on Aug 16,2020, Elapsed time: 0:00:32
-# Errors: 0, Warnings: 2
+# End time: 17:01:43 on Aug 17,2020, Elapsed time: 0:49:29
+# Errors: 0, Warnings: 5
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:07:37 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline.v 
+# -- Compiling module pipeline
+# 
+# Top level modules:
+# 	pipeline
+# End time: 17:07:37 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/foward.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:07:38 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/foward.v 
+# -- Compiling module foward
+# 
+# Top level modules:
+# 	foward
+# End time: 17:07:38 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 17:07:39 on Aug 17,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+do wave.do
+run 1us
+quit -sim
+# End time: 17:13:31 on Aug 17,2020, Elapsed time: 0:05:52
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 17:13:32 on Aug 17,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+do wave.do
+add wave -position insertpoint  \
+sim:/pipeline_vlg_tst/i1/b2v_inst8/registers
+add wave -position insertpoint  \
+sim:/pipeline_vlg_tst/i1/b2v_inst28/mem
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf F:/WorkFiles/verilog/RV32/simulation/modelsim/wave.do
+run 1us
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf F:/WorkFiles/verilog/RV32/simulation/modelsim/wave.do
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf F:/WorkFiles/verilog/RV32/simulation/modelsim/wave.do
+quit -sim
+# End time: 17:17:22 on Aug 17,2020, Elapsed time: 0:03:50
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:21:16 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt 
+# -- Compiling module pipeline_vlg_tst
+# 
+# Top level modules:
+# 	pipeline_vlg_tst
+# End time: 17:21:16 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 17:21:18 on Aug 17,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+do wave.do
+run 10us
+quit -sim
+# End time: 17:23:14 on Aug 17,2020, Elapsed time: 0:01:56
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:25:56 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt 
+# -- Compiling module pipeline_vlg_tst
+# ** Error: (vlog-13069) F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt(57): near "clk": syntax error, unexpected IDENTIFIER.
+# End time: 17:25:56 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# F:/Software/Modelsim/win64/vlog failed.
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:26:33 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt 
+# -- Compiling module pipeline_vlg_tst
+# 
+# Top level modules:
+# 	pipeline_vlg_tst
+# End time: 17:26:33 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 17:26:35 on Aug 17,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+do wave.do
+run 1us
+quit -sim
+# End time: 17:27:26 on Aug 17,2020, Elapsed time: 0:00:51
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:27:39 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt 
+# -- Compiling module pipeline_vlg_tst
+# 
+# Top level modules:
+# 	pipeline_vlg_tst
+# End time: 17:27:40 on Aug 17,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 17:27:41 on Aug 17,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+do wave.do
+run 1us
+run 10us
+quit -sim
+# End time: 17:30:07 on Aug 17,2020, Elapsed time: 0:02:26
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:30:08 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt 
+# -- Compiling module pipeline_vlg_tst
+# 
+# Top level modules:
+# 	pipeline_vlg_tst
+# End time: 17:30:09 on Aug 17,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 17:30:10 on Aug 17,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+do wave.do
+
+run 1us
+quit -sim
+# End time: 17:36:22 on Aug 17,2020, Elapsed time: 0:06:12
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 17:36:25 on Aug 17,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+do wave.do
+run 1us
+quit -sim
+# End time: 17:36:46 on Aug 17,2020, Elapsed time: 0:00:21
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:38:40 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt 
+# -- Compiling module pipeline_vlg_tst
+# 
+# Top level modules:
+# 	pipeline_vlg_tst
+# End time: 17:38:40 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 17:38:42 on Aug 17,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+do wave.do
+run 1us
+quit -sim
+# End time: 17:39:01 on Aug 17,2020, Elapsed time: 0:00:19
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 17:40:15 on Aug 17,2020
+# ** Note: (vsim-8009) Loading existing optimized design _opt1
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+run 1us
+quit -sim
+# End time: 17:40:25 on Aug 17,2020, Elapsed time: 0:00:10
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:40:33 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt 
+# -- Compiling module pipeline_vlg_tst
+# 
+# Top level modules:
+# 	pipeline_vlg_tst
+# End time: 17:40:33 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 17:40:39 on Aug 17,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+do wave.do
+run 10us
+quit -sim
+# End time: 17:41:01 on Aug 17,2020, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 17:45:46 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt 
+# -- Compiling module pipeline_vlg_tst
+# 
+# Top level modules:
+# 	pipeline_vlg_tst
+# End time: 17:45:46 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 17:45:48 on Aug 17,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+do wave.do
+run 2us
+quit -sim
+# End time: 18:10:46 on Aug 17,2020, Elapsed time: 0:24:58
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/regnumDecoder.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:07 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/regnumDecoder.v 
+# -- Compiling module regnumDecoder
+# 
+# Top level modules:
+# 	regnumDecoder
+# End time: 18:11:07 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/regFile.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:07 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/regFile.v 
+# -- Compiling module regFile
+# 
+# Top level modules:
+# 	regFile
+# End time: 18:11:07 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:07 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt 
+# -- Compiling module pipeline_vlg_tst
+# 
+# Top level modules:
+# 	pipeline_vlg_tst
+# End time: 18:11:07 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:07 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline.v 
+# -- Compiling module pipeline
+# 
+# Top level modules:
+# 	pipeline
+# End time: 18:11:08 on Aug 17,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/PC.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:08 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/PC.v 
+# -- Compiling module PC
+# 
+# Top level modules:
+# 	PC
+# End time: 18:11:08 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/mul3t1.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:08 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/mul3t1.v 
+# -- Compiling module mul3t1
+# 
+# Top level modules:
+# 	mul3t1
+# End time: 18:11:08 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/mul2t1.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:08 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/mul2t1.v 
+# -- Compiling module mul2t1
+# 
+# Top level modules:
+# 	mul2t1
+# End time: 18:11:08 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/MEMWB.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:08 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/MEMWB.v 
+# -- Compiling module MEMWB
+# 
+# Top level modules:
+# 	MEMWB
+# End time: 18:11:08 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/memory.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:09 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/memory.v 
+# -- Compiling module memory
+# ** Warning: F:/WorkFiles/verilog/RV32/src/memory.v(41): (vlog-2256) Event expressions should result in a singular type.
+# 
+# Top level modules:
+# 	memory
+# End time: 18:11:09 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 1
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/LSBextract.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:09 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/LSBextract.v 
+# -- Compiling module LSBextract
+# 
+# Top level modules:
+# 	LSBextract
+# End time: 18:11:09 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/instMem.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:09 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/instMem.v 
+# -- Compiling module instMem
+# 
+# Top level modules:
+# 	instMem
+# End time: 18:11:09 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/immGen.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:09 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/immGen.v 
+# -- Compiling module immGen
+# 
+# Top level modules:
+# 	immGen
+# End time: 18:11:09 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/IFID.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:09 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/IFID.v 
+# -- Compiling module IFID
+# 
+# Top level modules:
+# 	IFID
+# End time: 18:11:09 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/IDEX.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:09 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/IDEX.v 
+# -- Compiling module IDEX
+# 
+# Top level modules:
+# 	IDEX
+# End time: 18:11:10 on Aug 17,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/hazardDetect.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:10 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/hazardDetect.v 
+# -- Compiling module hazardDetect
+# 
+# Top level modules:
+# 	hazardDetect
+# End time: 18:11:10 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/foward.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:10 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/foward.v 
+# -- Compiling module foward
+# 
+# Top level modules:
+# 	foward
+# End time: 18:11:10 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/EXMEM.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:10 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/pipeline_regs/EXMEM.v 
+# -- Compiling module EXMEM
+# 
+# Top level modules:
+# 	EXMEM
+# End time: 18:11:10 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/dataModifier.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:10 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/dataModifier.v 
+# -- Compiling module dataModifier
+# 
+# Top level modules:
+# 	dataModifier
+# End time: 18:11:10 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/control.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:10 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/control.v 
+# -- Compiling module control
+# 
+# Top level modules:
+# 	control
+# End time: 18:11:10 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/comparator.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:10 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/comparator.v 
+# -- Compiling module comparator
+# 
+# Top level modules:
+# 	comparator
+# End time: 18:11:11 on Aug 17,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/branchHandler.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:11 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/branchHandler.v 
+# -- Compiling module branchHandler
+# 
+# Top level modules:
+# 	branchHandler
+# End time: 18:11:11 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/ALUSaGen.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:11 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/ALUSaGen.v 
+# -- Compiling module ALUSaGen
+# 
+# Top level modules:
+# 	ALUSaGen
+# End time: 18:11:11 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/ALUctl.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:11 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/ALUctl.v 
+# -- Compiling module ALUctl
+# 
+# Top level modules:
+# 	ALUctl
+# End time: 18:11:11 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/ALU.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:11 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/ALU.v 
+# -- Compiling module ALU
+# 
+# Top level modules:
+# 	ALU
+# End time: 18:11:11 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/adder.v
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:11:11 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/src" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/src/adder.v 
+# -- Compiling module adder
+# 
+# Top level modules:
+# 	adder
+# End time: 18:11:11 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 18:11:14 on Aug 17,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+do wave.do
+run 2us
+quit -sim
+# End time: 18:11:36 on Aug 17,2020, Elapsed time: 0:00:22
+# Errors: 0, Warnings: 0
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt
+# Model Technology ModelSim SE-64 vlog 10.5 Compiler 2016.02 Feb 13 2016
+# Start time: 18:13:11 on Aug 17,2020
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim" -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt 
+# -- Compiling module pipeline_vlg_tst
+# 
+# Top level modules:
+# 	pipeline_vlg_tst
+# End time: 18:13:11 on Aug 17,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -voptargs=+acc work.pipeline_vlg_tst
+# vsim -voptargs="+acc" work.pipeline_vlg_tst 
+# Start time: 18:13:13 on Aug 17,2020
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# Loading work.pipeline_vlg_tst(fast)
+# Loading work.pipeline(fast)
+# Loading work.PC(fast)
+# Loading work.instMem(fast)
+# Loading work.mul2t1(fast)
+# Loading work.ALUctl(fast)
+# Loading work.control(fast)
+# Loading work.IDEX(fast)
+# Loading work.ALU(fast)
+# Loading work.branchHandler(fast)
+# Loading work.comparator(fast)
+# Loading work.adder(fast)
+# Loading work.LSBextract(fast)
+# Loading work.IFID(fast)
+# Loading work.ALUSaGen(fast)
+# Loading work.mul3t1(fast)
+# Loading work.mul2t1(fast__1)
+# Loading work.EXMEM(fast)
+# Loading work.memory(fast)
+# Loading work.dataModifier(fast)
+# Loading work.MEMWB(fast)
+# Loading work.foward(fast)
+# Loading work.hazardDetect(fast)
+# Loading work.regnumDecoder(fast)
+# Loading work.regFile(fast)
+# Loading work.immGen(fast)
+run 10us
+quit -sim
+# End time: 18:13:27 on Aug 17,2020, Elapsed time: 0:00:14
+# Errors: 0, Warnings: 0

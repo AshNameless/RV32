@@ -1,5 +1,5 @@
 EDA Netlist Writer report for RV32
-Sat Aug 15 11:01:40 2020
+Mon Aug 17 15:37:32 2020
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -34,9 +34,9 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Sat Aug 15 11:01:40 2020 ;
+; EDA Netlist Writer Status ; Successful - Mon Aug 17 15:37:32 2020 ;
 ; Revision Name             ; RV32                                  ;
-; Top-level Entity Name     ; non_pipeline                          ;
+; Top-level Entity Name     ; pipeline                              ;
 ; Family                    ; Cyclone V                             ;
 +---------------------------+---------------------------------------+
 
@@ -47,13 +47,13 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sat Aug 15 11:01:39 2020
+    Info: Processing started: Mon Aug 17 15:37:31 2020
 Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off RV32 -c RV32 --gen_testbench
 Info (119006): Selected device 5CSEMA5F31C6 for design "RV32"
-Info (201000): Generated Verilog Test Bench File F:/WorkFiles/verilog/RV32/simulation/modelsim/non_pipeline.vt for simulation
+Info (201000): Generated Verilog Test Bench File F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt for simulation
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 0 warnings
     Info: Peak virtual memory: 4623 megabytes
-    Info: Processing ended: Sat Aug 15 11:01:40 2020
+    Info: Processing ended: Mon Aug 17 15:37:32 2020
     Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 

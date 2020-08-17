@@ -1,5 +1,5 @@
 Flow report for RV32
-Sun Aug 16 11:33:29 2020
+Mon Aug 17 17:07:15 2020
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -40,10 +40,10 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Sun Aug 16 11:33:29 2020       ;
+; Flow Status                     ; Successful - Mon Aug 17 17:07:15 2020       ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                   ; RV32                                        ;
-; Top-level Entity Name           ; non_pipeline                                ;
+; Top-level Entity Name           ; pipeline                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CSEMA5F31C6                                ;
 ; Timing Models                   ; Preliminary                                 ;
@@ -67,79 +67,84 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 08/16/2020 11:32:39 ;
+; Start date & time ; 08/17/2020 17:07:10 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; RV32                ;
 +-------------------+---------------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                           ;
-+--------------------------------------+-----------------------------------------------+---------------+--------------+----------------------+
-; Assignment Name                      ; Value                                         ; Default Value ; Entity Name  ; Section Id           ;
-+--------------------------------------+-----------------------------------------------+---------------+--------------+----------------------+
-; COMPILER_SIGNATURE_ID                ; 268891677475559.159754875807504               ; --            ; --           ; --                   ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --           ; ALU_vlg_tst          ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --           ; PC_vlg_tst           ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --           ; regFile_vlg_tst      ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --           ; instMem_vlg_tst      ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --           ; comparator_vlg_tst   ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --           ; adder_vlg_tst        ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --           ; dataModifier_vlg_tst ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --           ; memory_vlg_tst       ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --           ; non_pipeline_vlg_tst ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; non_pipeline_vlg_tst                          ; --            ; --           ; eda_simulation       ;
-; EDA_NETLIST_WRITER_OUTPUT_DIR        ; F:\WorkFiles\verilog\RV32\simulation\modelsim ; --            ; --           ; eda_simulation       ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                   ; --            ; --           ; eda_simulation       ;
-; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                            ; <None>        ; --           ; --                   ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                               ; --            ; --           ; eda_simulation       ;
-; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/ALU.vt                    ; --            ; --           ; ALU_vlg_tst          ;
-; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/PC.vt                     ; --            ; --           ; PC_vlg_tst           ;
-; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/regFile.vt                ; --            ; --           ; regFile_vlg_tst      ;
-; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/instMem.vt                ; --            ; --           ; instMem_vlg_tst      ;
-; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/comparator.vt             ; --            ; --           ; comparator_vlg_tst   ;
-; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/adder.vt                  ; --            ; --           ; adder_vlg_tst        ;
-; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/dataModifier.vt           ; --            ; --           ; dataModifier_vlg_tst ;
-; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/memory.vt                 ; --            ; --           ; memory_vlg_tst       ;
-; EDA_TEST_BENCH_FILE                  ; simulation/modelsim/non_pipeline.vt           ; --            ; --           ; non_pipeline_vlg_tst ;
-; EDA_TEST_BENCH_MODULE_NAME           ; ALU_vlg_tst                                   ; --            ; --           ; ALU_vlg_tst          ;
-; EDA_TEST_BENCH_MODULE_NAME           ; PC_vlg_tst                                    ; --            ; --           ; PC_vlg_tst           ;
-; EDA_TEST_BENCH_MODULE_NAME           ; regFile_vlg_tst                               ; --            ; --           ; regFile_vlg_tst      ;
-; EDA_TEST_BENCH_MODULE_NAME           ; instMem_vlg_tst                               ; --            ; --           ; instMem_vlg_tst      ;
-; EDA_TEST_BENCH_MODULE_NAME           ; comparator_vlg_tst                            ; --            ; --           ; comparator_vlg_tst   ;
-; EDA_TEST_BENCH_MODULE_NAME           ; adder_vlg_tst                                 ; --            ; --           ; adder_vlg_tst        ;
-; EDA_TEST_BENCH_MODULE_NAME           ; dataModifier_vlg_tst                          ; --            ; --           ; dataModifier_vlg_tst ;
-; EDA_TEST_BENCH_MODULE_NAME           ; memory_vlg_tst                                ; --            ; --           ; memory_vlg_tst       ;
-; EDA_TEST_BENCH_MODULE_NAME           ; non_pipeline_vlg_tst                          ; --            ; --           ; non_pipeline_vlg_tst ;
-; EDA_TEST_BENCH_NAME                  ; ALU_vlg_tst                                   ; --            ; --           ; eda_simulation       ;
-; EDA_TEST_BENCH_NAME                  ; PC_vlg_tst                                    ; --            ; --           ; eda_simulation       ;
-; EDA_TEST_BENCH_NAME                  ; regFile_vlg_tst                               ; --            ; --           ; eda_simulation       ;
-; EDA_TEST_BENCH_NAME                  ; instMem_vlg_tst                               ; --            ; --           ; eda_simulation       ;
-; EDA_TEST_BENCH_NAME                  ; comparator_vlg_tst                            ; --            ; --           ; eda_simulation       ;
-; EDA_TEST_BENCH_NAME                  ; adder_vlg_tst                                 ; --            ; --           ; eda_simulation       ;
-; EDA_TEST_BENCH_NAME                  ; dataModifier_vlg_tst                          ; --            ; --           ; eda_simulation       ;
-; EDA_TEST_BENCH_NAME                  ; memory_vlg_tst                                ; --            ; --           ; eda_simulation       ;
-; EDA_TEST_BENCH_NAME                  ; non_pipeline_vlg_tst                          ; --            ; --           ; eda_simulation       ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 s                                           ; --            ; --           ; ALU_vlg_tst          ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --           ; PC_vlg_tst           ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --           ; regFile_vlg_tst      ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --           ; instMem_vlg_tst      ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --           ; comparator_vlg_tst   ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --           ; adder_vlg_tst        ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --           ; dataModifier_vlg_tst ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --           ; memory_vlg_tst       ;
-; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --           ; non_pipeline_vlg_tst ;
-; EDA_TIME_SCALE                       ; 1 ns                                          ; --            ; --           ; eda_simulation       ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                            ; --            ; --           ; --                   ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                             ; --            ; --           ; --                   ;
-; PARTITION_COLOR                      ; 16764057                                      ; --            ; non_pipeline ; Top                  ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                         ; --            ; non_pipeline ; Top                  ;
-; PARTITION_NETLIST_TYPE               ; SOURCE                                        ; --            ; non_pipeline ; Top                  ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                           ; --            ; --           ; --                   ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW         ; --            ; --           ; --                   ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                                  ; --            ; --           ; --                   ;
-; TOP_LEVEL_ENTITY                     ; non_pipeline                                  ; RV32          ; --           ; --                   ;
-+--------------------------------------+-----------------------------------------------+---------------+--------------+----------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                          ;
++--------------------------------------+-----------------------------------------------+---------------+-------------+----------------------+
+; Assignment Name                      ; Value                                         ; Default Value ; Entity Name ; Section Id           ;
++--------------------------------------+-----------------------------------------------+---------------+-------------+----------------------+
+; COMPILER_SIGNATURE_ID                ; 202866754073574.159765523014364               ; --            ; --          ; --                   ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --          ; ALU_vlg_tst          ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --          ; PC_vlg_tst           ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --          ; regFile_vlg_tst      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --          ; instMem_vlg_tst      ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --          ; comparator_vlg_tst   ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --          ; adder_vlg_tst        ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --          ; dataModifier_vlg_tst ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --          ; memory_vlg_tst       ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --          ; non_pipeline_vlg_tst ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                            ; --            ; --          ; pipeline_vlg_tst     ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; pipeline_vlg_tst                              ; --            ; --          ; eda_simulation       ;
+; EDA_NETLIST_WRITER_OUTPUT_DIR        ; F:/WorkFiles/verilog/RV32/simulation/modelsim ; --            ; --          ; eda_simulation       ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                                   ; --            ; --          ; eda_simulation       ;
+; EDA_SIMULATION_TOOL                  ; ModelSim (Verilog)                            ; <None>        ; --          ; --                   ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                               ; --            ; --          ; eda_simulation       ;
+; EDA_TEST_BENCH_FILE                  ; ../simulation/modelsim/ALU.vt                 ; --            ; --          ; ALU_vlg_tst          ;
+; EDA_TEST_BENCH_FILE                  ; ../simulation/modelsim/PC.vt                  ; --            ; --          ; PC_vlg_tst           ;
+; EDA_TEST_BENCH_FILE                  ; ../simulation/modelsim/regFile.vt             ; --            ; --          ; regFile_vlg_tst      ;
+; EDA_TEST_BENCH_FILE                  ; ../simulation/modelsim/instMem.vt             ; --            ; --          ; instMem_vlg_tst      ;
+; EDA_TEST_BENCH_FILE                  ; ../simulation/modelsim/comparator.vt          ; --            ; --          ; comparator_vlg_tst   ;
+; EDA_TEST_BENCH_FILE                  ; ../simulation/modelsim/adder.vt               ; --            ; --          ; adder_vlg_tst        ;
+; EDA_TEST_BENCH_FILE                  ; ../simulation/modelsim/dataModifier.vt        ; --            ; --          ; dataModifier_vlg_tst ;
+; EDA_TEST_BENCH_FILE                  ; ../simulation/modelsim/memory.vt              ; --            ; --          ; memory_vlg_tst       ;
+; EDA_TEST_BENCH_FILE                  ; ../simulation/modelsim/non_pipeline.vt        ; --            ; --          ; non_pipeline_vlg_tst ;
+; EDA_TEST_BENCH_FILE                  ; ../simulation/modelsim/pipeline.vt            ; --            ; --          ; pipeline_vlg_tst     ;
+; EDA_TEST_BENCH_MODULE_NAME           ; ALU_vlg_tst                                   ; --            ; --          ; ALU_vlg_tst          ;
+; EDA_TEST_BENCH_MODULE_NAME           ; PC_vlg_tst                                    ; --            ; --          ; PC_vlg_tst           ;
+; EDA_TEST_BENCH_MODULE_NAME           ; regFile_vlg_tst                               ; --            ; --          ; regFile_vlg_tst      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; instMem_vlg_tst                               ; --            ; --          ; instMem_vlg_tst      ;
+; EDA_TEST_BENCH_MODULE_NAME           ; comparator_vlg_tst                            ; --            ; --          ; comparator_vlg_tst   ;
+; EDA_TEST_BENCH_MODULE_NAME           ; adder_vlg_tst                                 ; --            ; --          ; adder_vlg_tst        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; dataModifier_vlg_tst                          ; --            ; --          ; dataModifier_vlg_tst ;
+; EDA_TEST_BENCH_MODULE_NAME           ; memory_vlg_tst                                ; --            ; --          ; memory_vlg_tst       ;
+; EDA_TEST_BENCH_MODULE_NAME           ; non_pipeline_vlg_tst                          ; --            ; --          ; non_pipeline_vlg_tst ;
+; EDA_TEST_BENCH_MODULE_NAME           ; pipeline_vlg_tst                              ; --            ; --          ; pipeline_vlg_tst     ;
+; EDA_TEST_BENCH_NAME                  ; ALU_vlg_tst                                   ; --            ; --          ; eda_simulation       ;
+; EDA_TEST_BENCH_NAME                  ; PC_vlg_tst                                    ; --            ; --          ; eda_simulation       ;
+; EDA_TEST_BENCH_NAME                  ; regFile_vlg_tst                               ; --            ; --          ; eda_simulation       ;
+; EDA_TEST_BENCH_NAME                  ; instMem_vlg_tst                               ; --            ; --          ; eda_simulation       ;
+; EDA_TEST_BENCH_NAME                  ; comparator_vlg_tst                            ; --            ; --          ; eda_simulation       ;
+; EDA_TEST_BENCH_NAME                  ; adder_vlg_tst                                 ; --            ; --          ; eda_simulation       ;
+; EDA_TEST_BENCH_NAME                  ; dataModifier_vlg_tst                          ; --            ; --          ; eda_simulation       ;
+; EDA_TEST_BENCH_NAME                  ; memory_vlg_tst                                ; --            ; --          ; eda_simulation       ;
+; EDA_TEST_BENCH_NAME                  ; non_pipeline_vlg_tst                          ; --            ; --          ; eda_simulation       ;
+; EDA_TEST_BENCH_NAME                  ; pipeline_vlg_tst                              ; --            ; --          ; eda_simulation       ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 s                                           ; --            ; --          ; ALU_vlg_tst          ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --          ; PC_vlg_tst           ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --          ; regFile_vlg_tst      ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --          ; instMem_vlg_tst      ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --          ; comparator_vlg_tst   ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --          ; adder_vlg_tst        ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --          ; dataModifier_vlg_tst ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --          ; memory_vlg_tst       ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --          ; non_pipeline_vlg_tst ;
+; EDA_TEST_BENCH_RUN_SIM_FOR           ; 1 us                                          ; --            ; --          ; pipeline_vlg_tst     ;
+; EDA_TIME_SCALE                       ; 1 ns                                          ; --            ; --          ; eda_simulation       ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                            ; --            ; --          ; --                   ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                             ; --            ; --          ; --                   ;
+; PARTITION_COLOR                      ; 16764057                                      ; --            ; pipeline    ; Top                  ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; PLACEMENT_AND_ROUTING                         ; --            ; pipeline    ; Top                  ;
+; PARTITION_NETLIST_TYPE               ; SOURCE                                        ; --            ; pipeline    ; Top                  ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                           ; --            ; --          ; --                   ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW         ; --            ; --          ; --                   ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                                  ; --            ; --          ; --                   ;
+; TOP_LEVEL_ENTITY                     ; pipeline                                      ; RV32          ; --          ; --                   ;
++--------------------------------------+-----------------------------------------------+---------------+-------------+----------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -147,8 +152,8 @@ applicable agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:49     ; 1.0                     ; 8056 MB             ; 00:00:43                           ;
-; Total                ; 00:00:49     ; --                      ; --                  ; 00:00:43                           ;
+; Analysis & Synthesis ; 00:00:05     ; 1.0                     ; 4761 MB             ; 00:00:05                           ;
+; Total                ; 00:00:05     ; --                      ; --                  ; 00:00:05                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

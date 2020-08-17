@@ -1,5 +1,5 @@
 Analysis & Synthesis report for RV32
-Sun Aug 16 11:33:29 2020
+Mon Aug 17 17:07:15 2020
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -16,27 +16,36 @@ Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
   8. General Register Statistics
   9. Parameter Settings for User Entity Instance: PC:b2v_inst
  10. Parameter Settings for User Entity Instance: instMem:b2v_inst1
- 11. Parameter Settings for User Entity Instance: ALUctl:b2v_inst10
- 12. Parameter Settings for User Entity Instance: ALUSaGen:b2v_inst11
- 13. Parameter Settings for User Entity Instance: comparator:b2v_inst12
- 14. Parameter Settings for User Entity Instance: adder:b2v_inst13
- 15. Parameter Settings for User Entity Instance: mul2t1:b2v_inst14
- 16. Parameter Settings for User Entity Instance: mul3t1:b2v_inst16
- 17. Parameter Settings for User Entity Instance: mul3t1:b2v_inst17
- 18. Parameter Settings for User Entity Instance: LSBextract:b2v_inst19
- 19. Parameter Settings for User Entity Instance: regnumDecoder:b2v_inst2
- 20. Parameter Settings for User Entity Instance: memory:b2v_inst20
- 21. Parameter Settings for User Entity Instance: control:b2v_inst21
- 22. Parameter Settings for User Entity Instance: regFile:b2v_inst3
- 23. Parameter Settings for User Entity Instance: dataModifier:b2v_inst4
- 24. Parameter Settings for User Entity Instance: mul2t1:b2v_inst5
- 25. Parameter Settings for User Entity Instance: adder:b2v_inst6
- 26. Parameter Settings for User Entity Instance: immGen:b2v_inst7
- 27. Parameter Settings for User Entity Instance: mul2t1:b2v_inst8
- 28. Parameter Settings for User Entity Instance: ALU:b2v_inst9
- 29. Port Connectivity Checks: "ALU:b2v_inst9"
- 30. Elapsed Time Per Partition
- 31. Analysis & Synthesis Messages
+ 11. Parameter Settings for User Entity Instance: mul2t1:b2v_inst10
+ 12. Parameter Settings for User Entity Instance: ALUctl:b2v_inst11
+ 13. Parameter Settings for User Entity Instance: control:b2v_inst12
+ 14. Parameter Settings for User Entity Instance: IDEX:b2v_inst14
+ 15. Parameter Settings for User Entity Instance: ALU:b2v_inst15
+ 16. Parameter Settings for User Entity Instance: branchHandler:b2v_inst16
+ 17. Parameter Settings for User Entity Instance: comparator:b2v_inst17
+ 18. Parameter Settings for User Entity Instance: adder:b2v_inst18
+ 19. Parameter Settings for User Entity Instance: LSBextract:b2v_inst19
+ 20. Parameter Settings for User Entity Instance: IFID:b2v_inst2
+ 21. Parameter Settings for User Entity Instance: ALUSaGen:b2v_inst20
+ 22. Parameter Settings for User Entity Instance: mul3t1:b2v_inst22
+ 23. Parameter Settings for User Entity Instance: mul3t1:b2v_inst23
+ 24. Parameter Settings for User Entity Instance: mul2t1:b2v_inst24
+ 25. Parameter Settings for User Entity Instance: mul2t1:b2v_inst25
+ 26. Parameter Settings for User Entity Instance: EXMEM:b2v_inst26
+ 27. Parameter Settings for User Entity Instance: mul3t1:b2v_inst27
+ 28. Parameter Settings for User Entity Instance: memory:b2v_inst28
+ 29. Parameter Settings for User Entity Instance: dataModifier:b2v_inst29
+ 30. Parameter Settings for User Entity Instance: MEMWB:b2v_inst30
+ 31. Parameter Settings for User Entity Instance: foward:b2v_inst31
+ 32. Parameter Settings for User Entity Instance: hazardDetect:b2v_inst32
+ 33. Parameter Settings for User Entity Instance: regnumDecoder:b2v_inst6
+ 34. Parameter Settings for User Entity Instance: adder:b2v_inst7
+ 35. Parameter Settings for User Entity Instance: regFile:b2v_inst8
+ 36. Parameter Settings for User Entity Instance: immGen:b2v_inst9
+ 37. Port Connectivity Checks: "ALU:b2v_inst15"
+ 38. Port Connectivity Checks: "control:b2v_inst12"
+ 39. Elapsed Time Per Partition
+ 40. Analysis & Synthesis Messages
 
 
 
@@ -62,10 +71,10 @@ applicable agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Sun Aug 16 11:33:29 2020       ;
+; Analysis & Synthesis Status     ; Successful - Mon Aug 17 17:07:15 2020       ;
 ; Quartus II 64-Bit Version       ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                   ; RV32                                        ;
-; Top-level Entity Name           ; non_pipeline                                ;
+; Top-level Entity Name           ; pipeline                                    ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
 ; Total registers                 ; 0                                           ;
@@ -88,7 +97,7 @@ applicable agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CSEMA5F31C6       ;                    ;
-; Top-level entity name                                                           ; non_pipeline       ; RV32               ;
+; Top-level entity name                                                           ; pipeline           ; RV32               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone IV GX      ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -186,30 +195,37 @@ applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                  ; Library ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------+---------+
-; ../src/non_pipeline.v            ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/non_pipeline.v  ;         ;
-; ../src/regnumDecoder.v           ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/regnumDecoder.v ;         ;
-; ../src/regFile.v                 ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/regFile.v       ;         ;
-; ../src/PC.v                      ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/PC.v            ;         ;
-; ../src/paras.v                   ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/paras.v         ;         ;
-; ../src/mul3t1.v                  ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/mul3t1.v        ;         ;
-; ../src/mul2t1.v                  ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/mul2t1.v        ;         ;
-; ../src/memory.v                  ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/memory.v        ;         ;
-; ../src/LSBextract.v              ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/LSBextract.v    ;         ;
-; ../src/instMem.v                 ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/instMem.v       ;         ;
-; ../src/immGen.v                  ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/immGen.v        ;         ;
-; ../src/dataModifier.v            ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/dataModifier.v  ;         ;
-; ../src/control.v                 ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/control.v       ;         ;
-; ../src/comparator.v              ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/comparator.v    ;         ;
-; ../src/ALUSaGen.v                ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/ALUSaGen.v      ;         ;
-; ../src/ALUctl.v                  ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/ALUctl.v        ;         ;
-; ../src/ALU.v                     ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/ALU.v           ;         ;
-; ../src/adder.v                   ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/adder.v         ;         ;
-+----------------------------------+-----------------+------------------------+-----------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                      ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                        ; Library ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
+; ../src/pipeline.v                ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/pipeline.v            ;         ;
+; ../src/regnumDecoder.v           ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/regnumDecoder.v       ;         ;
+; ../src/regFile.v                 ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/regFile.v             ;         ;
+; ../src/PC.v                      ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/PC.v                  ;         ;
+; ../src/paras.v                   ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/paras.v               ;         ;
+; ../src/mul3t1.v                  ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/mul3t1.v              ;         ;
+; ../src/mul2t1.v                  ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/mul2t1.v              ;         ;
+; ../src/memory.v                  ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/memory.v              ;         ;
+; ../src/LSBextract.v              ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/LSBextract.v          ;         ;
+; ../src/instMem.v                 ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/instMem.v             ;         ;
+; ../src/immGen.v                  ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/immGen.v              ;         ;
+; ../src/dataModifier.v            ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/dataModifier.v        ;         ;
+; ../src/control.v                 ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/control.v             ;         ;
+; ../src/comparator.v              ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/comparator.v          ;         ;
+; ../src/ALUSaGen.v                ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/ALUSaGen.v            ;         ;
+; ../src/ALUctl.v                  ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/ALUctl.v              ;         ;
+; ../src/ALU.v                     ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/ALU.v                 ;         ;
+; ../src/adder.v                   ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/adder.v               ;         ;
+; ../src/pipeline_regs/IFID.v      ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/pipeline_regs/IFID.v  ;         ;
+; ../src/pipeline_regs/IDEX.v      ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/pipeline_regs/IDEX.v  ;         ;
+; ../src/pipeline_regs/EXMEM.v     ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/pipeline_regs/EXMEM.v ;         ;
+; ../src/pipeline_regs/MEMWB.v     ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/pipeline_regs/MEMWB.v ;         ;
+; ../src/branchHandler.v           ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/branchHandler.v       ;         ;
+; ../src/foward.v                  ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/foward.v              ;         ;
+; ../src/hazardDetect.v            ; yes             ; User Verilog HDL File  ; F:/WorkFiles/verilog/RV32/src/hazardDetect.v        ;         ;
++----------------------------------+-----------------+------------------------+-----------------------------------------------------+---------+
 
 
 +-----------------------------------------------------+
@@ -242,7 +258,7 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
-; |non_pipeline              ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 39   ; 0            ; |non_pipeline       ; work         ;
+; |pipeline                  ; 0 (0)             ; 0 (0)        ; 0                 ; 0          ; 39   ; 0            ; |pipeline           ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -286,7 +302,17 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALUctl:b2v_inst10 ;
+; Parameter Settings for User Entity Instance: mul2t1:b2v_inst10 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; data_width     ; 5     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALUctl:b2v_inst11 ;
 +----------------+-------+---------------------------------------+
 ; Parameter Name ; Value ; Type                                  ;
 +----------------+-------+---------------------------------------+
@@ -297,19 +323,56 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALUSaGen:b2v_inst11 ;
-+----------------+-------+-----------------------------------------+
-; Parameter Name ; Value ; Type                                    ;
-+----------------+-------+-----------------------------------------+
-; operand_width  ; 32    ; Signed Integer                          ;
-; Sa_width       ; 5     ; Signed Integer                          ;
-+----------------+-------+-----------------------------------------+
++-----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: control:b2v_inst12 ;
++----------------+-------+----------------------------------------+
+; Parameter Name ; Value ; Type                                   ;
++----------------+-------+----------------------------------------+
+; inst_width     ; 32    ; Signed Integer                         ;
+; inst_op_width  ; 17    ; Signed Integer                         ;
++----------------+-------+----------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: IDEX:b2v_inst14 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; PC_width       ; 32    ; Signed Integer                      ;
+; inst_width     ; 32    ; Signed Integer                      ;
+; num_width      ; 5     ; Signed Integer                      ;
+; operand_width  ; 32    ; Signed Integer                      ;
+; ALUop_width    ; 4     ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALU:b2v_inst15 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; opcode_width   ; 4     ; Signed Integer                     ;
+; Sa_width       ; 5     ; Signed Integer                     ;
+; operand_width  ; 32    ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: branchHandler:b2v_inst16 ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; inst_width     ; 32    ; Signed Integer                               ;
+; inst_op_width  ; 17    ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +--------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: comparator:b2v_inst12 ;
+; Parameter Settings for User Entity Instance: comparator:b2v_inst17 ;
 +----------------+-------+-------------------------------------------+
 ; Parameter Name ; Value ; Type                                      ;
 +----------------+-------+-------------------------------------------+
@@ -320,42 +383,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 
 
 +---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: adder:b2v_inst13 ;
+; Parameter Settings for User Entity Instance: adder:b2v_inst18 ;
 +----------------+-------+--------------------------------------+
 ; Parameter Name ; Value ; Type                                 ;
 +----------------+-------+--------------------------------------+
 ; operand_width  ; 32    ; Signed Integer                       ;
 +----------------+-------+--------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mul2t1:b2v_inst14 ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; data_width     ; 32    ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mul3t1:b2v_inst16 ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; data_width     ; 32    ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mul3t1:b2v_inst17 ;
-+----------------+-------+---------------------------------------+
-; Parameter Name ; Value ; Type                                  ;
-+----------------+-------+---------------------------------------+
-; data_width     ; 32    ; Signed Integer                        ;
-+----------------+-------+---------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
@@ -369,19 +402,94 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regnumDecoder:b2v_inst2 ;
-+----------------+-------+---------------------------------------------+
-; Parameter Name ; Value ; Type                                        ;
-+----------------+-------+---------------------------------------------+
-; inst_width     ; 32    ; Signed Integer                              ;
-; num_width      ; 5     ; Signed Integer                              ;
-+----------------+-------+---------------------------------------------+
++-------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: IFID:b2v_inst2 ;
++----------------+-------+------------------------------------+
+; Parameter Name ; Value ; Type                               ;
++----------------+-------+------------------------------------+
+; PC_width       ; 32    ; Signed Integer                     ;
+; inst_width     ; 32    ; Signed Integer                     ;
+; num_width      ; 5     ; Signed Integer                     ;
++----------------+-------+------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: ALUSaGen:b2v_inst20 ;
++----------------+-------+-----------------------------------------+
+; Parameter Name ; Value ; Type                                    ;
++----------------+-------+-----------------------------------------+
+; operand_width  ; 32    ; Signed Integer                          ;
+; Sa_width       ; 5     ; Signed Integer                          ;
++----------------+-------+-----------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: memory:b2v_inst20 ;
+; Parameter Settings for User Entity Instance: mul3t1:b2v_inst22 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; data_width     ; 32    ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mul3t1:b2v_inst23 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; data_width     ; 32    ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mul2t1:b2v_inst24 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; data_width     ; 32    ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mul2t1:b2v_inst25 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; data_width     ; 32    ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: EXMEM:b2v_inst26 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; PC_width       ; 32    ; Signed Integer                       ;
+; num_width      ; 5     ; Signed Integer                       ;
+; operand_width  ; 32    ; Signed Integer                       ;
+; ALUop_width    ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: mul3t1:b2v_inst27 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; data_width     ; 32    ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: memory:b2v_inst28 ;
 +----------------+-------+---------------------------------------+
 ; Parameter Name ; Value ; Type                                  ;
 +----------------+-------+---------------------------------------+
@@ -392,19 +500,71 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: control:b2v_inst21 ;
-+----------------+-------+----------------------------------------+
-; Parameter Name ; Value ; Type                                   ;
-+----------------+-------+----------------------------------------+
-; inst_width     ; 32    ; Signed Integer                         ;
-; inst_op_width  ; 17    ; Signed Integer                         ;
-+----------------+-------+----------------------------------------+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: dataModifier:b2v_inst29 ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; mem_dwidth     ; 32    ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: MEMWB:b2v_inst30 ;
++----------------+-------+--------------------------------------+
+; Parameter Name ; Value ; Type                                 ;
++----------------+-------+--------------------------------------+
+; num_width      ; 5     ; Signed Integer                       ;
+; operand_width  ; 32    ; Signed Integer                       ;
+; ALUop_width    ; 4     ; Signed Integer                       ;
++----------------+-------+--------------------------------------+
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
 +----------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: regFile:b2v_inst3 ;
+; Parameter Settings for User Entity Instance: foward:b2v_inst31 ;
++----------------+-------+---------------------------------------+
+; Parameter Name ; Value ; Type                                  ;
++----------------+-------+---------------------------------------+
+; num_width      ; 5     ; Signed Integer                        ;
++----------------+-------+---------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: hazardDetect:b2v_inst32 ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; num_width      ; 5     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regnumDecoder:b2v_inst6 ;
++----------------+-------+---------------------------------------------+
+; Parameter Name ; Value ; Type                                        ;
++----------------+-------+---------------------------------------------+
+; inst_width     ; 32    ; Signed Integer                              ;
+; num_width      ; 5     ; Signed Integer                              ;
++----------------+-------+---------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: adder:b2v_inst7 ;
++----------------+-------+-------------------------------------+
+; Parameter Name ; Value ; Type                                ;
++----------------+-------+-------------------------------------+
+; operand_width  ; 32    ; Signed Integer                      ;
++----------------+-------+-------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: regFile:b2v_inst8 ;
 +----------------+-------+---------------------------------------+
 ; Parameter Name ; Value ; Type                                  ;
 +----------------+-------+---------------------------------------+
@@ -415,38 +575,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: dataModifier:b2v_inst4 ;
-+----------------+-------+--------------------------------------------+
-; Parameter Name ; Value ; Type                                       ;
-+----------------+-------+--------------------------------------------+
-; mem_dwidth     ; 32    ; Signed Integer                             ;
-+----------------+-------+--------------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mul2t1:b2v_inst5 ;
-+----------------+-------+--------------------------------------+
-; Parameter Name ; Value ; Type                                 ;
-+----------------+-------+--------------------------------------+
-; data_width     ; 5     ; Signed Integer                       ;
-+----------------+-------+--------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+--------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: adder:b2v_inst6 ;
-+----------------+-------+-------------------------------------+
-; Parameter Name ; Value ; Type                                ;
-+----------------+-------+-------------------------------------+
-; operand_width  ; 32    ; Signed Integer                      ;
-+----------------+-------+-------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: immGen:b2v_inst7 ;
+; Parameter Settings for User Entity Instance: immGen:b2v_inst9 ;
 +----------------+-------+--------------------------------------+
 ; Parameter Name ; Value ; Type                                 ;
 +----------------+-------+--------------------------------------+
@@ -456,30 +586,8 @@ Note: In order to hide this table in the UI and the text report file, please set
 Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+---------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: mul2t1:b2v_inst8 ;
-+----------------+-------+--------------------------------------+
-; Parameter Name ; Value ; Type                                 ;
-+----------------+-------+--------------------------------------+
-; data_width     ; 32    ; Signed Integer                       ;
-+----------------+-------+--------------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
-+------------------------------------------------------------+
-; Parameter Settings for User Entity Instance: ALU:b2v_inst9 ;
-+----------------+-------+-----------------------------------+
-; Parameter Name ; Value ; Type                              ;
-+----------------+-------+-----------------------------------+
-; opcode_width   ; 4     ; Signed Integer                    ;
-; Sa_width       ; 5     ; Signed Integer                    ;
-; operand_width  ; 32    ; Signed Integer                    ;
-+----------------+-------+-----------------------------------+
-Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
-
-
 +-------------------------------------------------------------------------------------------------------------------------------------+
-; Port Connectivity Checks: "ALU:b2v_inst9"                                                                                           ;
+; Port Connectivity Checks: "ALU:b2v_inst15"                                                                                          ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 ; Port ; Type   ; Severity ; Details                                                                                                  ;
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
@@ -487,12 +595,22 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+----------------------------------------------------------------------------------------------------------+
 
 
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "control:b2v_inst12"                                                                                                                                 ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; Port        ; Type   ; Severity ; Details                                                                                                                                      ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+; AB_relation ; Input  ; Warning  ; Declared by entity but not connected by instance. If a default value exists, it will be used.  Otherwise, the port will be connected to GND. ;
+; PC_src      ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.                                     ;
++-------------+--------+----------+----------------------------------------------------------------------------------------------------------------------------------------------+
+
+
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -502,9 +620,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Sun Aug 16 11:32:38 2020
+    Info: Processing started: Mon Aug 17 17:07:10 2020
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off RV32 -c RV32
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (12021): Found 1 design units, including 1 entities, in source file /workfiles/verilog/rv32/src/pipeline.v
+    Info (12023): Found entity 1: pipeline
 Info (12021): Found 1 design units, including 1 entities, in source file /workfiles/verilog/rv32/src/non_pipeline.v
     Info (12023): Found entity 1: non_pipeline
 Info (12021): Found 1 design units, including 1 entities, in source file /workfiles/verilog/rv32/src/regnumdecoder.v
@@ -540,76 +660,97 @@ Info (12021): Found 1 design units, including 1 entities, in source file /workfi
     Info (12023): Found entity 1: ALU
 Info (12021): Found 1 design units, including 1 entities, in source file /workfiles/verilog/rv32/src/adder.v
     Info (12023): Found entity 1: adder
-Info (12127): Elaborating entity "non_pipeline" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file /workfiles/verilog/rv32/src/pipeline_regs/ifid.v
+    Info (12023): Found entity 1: IFID
+Info (12021): Found 1 design units, including 1 entities, in source file /workfiles/verilog/rv32/src/pipeline_regs/idex.v
+    Info (12023): Found entity 1: IDEX
+Info (12021): Found 1 design units, including 1 entities, in source file /workfiles/verilog/rv32/src/pipeline_regs/exmem.v
+    Info (12023): Found entity 1: EXMEM
+Info (12021): Found 1 design units, including 1 entities, in source file /workfiles/verilog/rv32/src/pipeline_regs/memwb.v
+    Info (12023): Found entity 1: MEMWB
+Info (12021): Found 1 design units, including 1 entities, in source file /workfiles/verilog/rv32/src/branchhandler.v
+    Info (12023): Found entity 1: branchHandler
+Info (12021): Found 1 design units, including 1 entities, in source file /workfiles/verilog/rv32/src/foward.v
+    Info (12023): Found entity 1: foward
+Info (12021): Found 1 design units, including 1 entities, in source file /workfiles/verilog/rv32/src/hazarddetect.v
+    Info (12023): Found entity 1: hazardDetect
+Info (12127): Elaborating entity "pipeline" for the top level hierarchy
 Info (12128): Elaborating entity "PC" for hierarchy "PC:b2v_inst"
 Info (12128): Elaborating entity "instMem" for hierarchy "instMem:b2v_inst1"
 Warning (10858): Verilog HDL warning at instMem.v(33): object memory used but never assigned
 Warning (10030): Net "memory" at instMem.v(33) has no driver or initial value, using a default initial value '0'
-Info (12128): Elaborating entity "ALUctl" for hierarchy "ALUctl:b2v_inst10"
-Info (12128): Elaborating entity "ALUSaGen" for hierarchy "ALUSaGen:b2v_inst11"
-Info (12128): Elaborating entity "comparator" for hierarchy "comparator:b2v_inst12"
-Info (12128): Elaborating entity "adder" for hierarchy "adder:b2v_inst13"
-Info (12128): Elaborating entity "mul2t1" for hierarchy "mul2t1:b2v_inst14"
-Info (12128): Elaborating entity "mul3t1" for hierarchy "mul3t1:b2v_inst16"
+Info (12128): Elaborating entity "mul2t1" for hierarchy "mul2t1:b2v_inst10"
+Info (12128): Elaborating entity "ALUctl" for hierarchy "ALUctl:b2v_inst11"
+Info (12128): Elaborating entity "control" for hierarchy "control:b2v_inst12"
+Info (12128): Elaborating entity "IDEX" for hierarchy "IDEX:b2v_inst14"
+Info (12128): Elaborating entity "ALU" for hierarchy "ALU:b2v_inst15"
+Info (12128): Elaborating entity "branchHandler" for hierarchy "branchHandler:b2v_inst16"
+Info (12128): Elaborating entity "comparator" for hierarchy "comparator:b2v_inst17"
+Info (12128): Elaborating entity "adder" for hierarchy "adder:b2v_inst18"
 Info (12128): Elaborating entity "LSBextract" for hierarchy "LSBextract:b2v_inst19"
-Info (12128): Elaborating entity "regnumDecoder" for hierarchy "regnumDecoder:b2v_inst2"
-Info (12128): Elaborating entity "memory" for hierarchy "memory:b2v_inst20"
-Info (12128): Elaborating entity "control" for hierarchy "control:b2v_inst21"
-Info (12128): Elaborating entity "regFile" for hierarchy "regFile:b2v_inst3"
-Info (12128): Elaborating entity "dataModifier" for hierarchy "dataModifier:b2v_inst4"
-Info (12128): Elaborating entity "mul2t1" for hierarchy "mul2t1:b2v_inst5"
-Info (12128): Elaborating entity "immGen" for hierarchy "immGen:b2v_inst7"
-Info (12128): Elaborating entity "ALU" for hierarchy "ALU:b2v_inst9"
-Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
+Info (12128): Elaborating entity "IFID" for hierarchy "IFID:b2v_inst2"
+Info (12128): Elaborating entity "ALUSaGen" for hierarchy "ALUSaGen:b2v_inst20"
+Info (12128): Elaborating entity "mul3t1" for hierarchy "mul3t1:b2v_inst22"
+Info (12128): Elaborating entity "mul2t1" for hierarchy "mul2t1:b2v_inst24"
+Info (12128): Elaborating entity "EXMEM" for hierarchy "EXMEM:b2v_inst26"
+Info (12128): Elaborating entity "memory" for hierarchy "memory:b2v_inst28"
+Info (12128): Elaborating entity "dataModifier" for hierarchy "dataModifier:b2v_inst29"
+Info (12128): Elaborating entity "MEMWB" for hierarchy "MEMWB:b2v_inst30"
+Info (12128): Elaborating entity "foward" for hierarchy "foward:b2v_inst31"
+Info (12128): Elaborating entity "hazardDetect" for hierarchy "hazardDetect:b2v_inst32"
+Info (12128): Elaborating entity "regnumDecoder" for hierarchy "regnumDecoder:b2v_inst6"
+Info (12128): Elaborating entity "regFile" for hierarchy "regFile:b2v_inst8"
+Info (12128): Elaborating entity "immGen" for hierarchy "immGen:b2v_inst9"
+Warning (12241): 2 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 39 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "clk"
     Warning (15610): No output dependent on input pin "rst_n"
-    Warning (15610): No output dependent on input pin "constant_four[0]"
-    Warning (15610): No output dependent on input pin "constant_four[1]"
-    Warning (15610): No output dependent on input pin "constant_four[2]"
-    Warning (15610): No output dependent on input pin "constant_four[3]"
-    Warning (15610): No output dependent on input pin "constant_four[4]"
-    Warning (15610): No output dependent on input pin "constant_four[5]"
-    Warning (15610): No output dependent on input pin "constant_four[6]"
-    Warning (15610): No output dependent on input pin "constant_four[7]"
-    Warning (15610): No output dependent on input pin "constant_four[8]"
-    Warning (15610): No output dependent on input pin "constant_four[9]"
-    Warning (15610): No output dependent on input pin "constant_four[10]"
-    Warning (15610): No output dependent on input pin "constant_four[11]"
-    Warning (15610): No output dependent on input pin "constant_four[12]"
-    Warning (15610): No output dependent on input pin "constant_four[13]"
-    Warning (15610): No output dependent on input pin "constant_four[14]"
-    Warning (15610): No output dependent on input pin "constant_four[15]"
-    Warning (15610): No output dependent on input pin "constant_four[16]"
-    Warning (15610): No output dependent on input pin "constant_four[17]"
-    Warning (15610): No output dependent on input pin "constant_four[18]"
-    Warning (15610): No output dependent on input pin "constant_four[19]"
-    Warning (15610): No output dependent on input pin "constant_four[20]"
-    Warning (15610): No output dependent on input pin "constant_four[21]"
-    Warning (15610): No output dependent on input pin "constant_four[22]"
-    Warning (15610): No output dependent on input pin "constant_four[23]"
-    Warning (15610): No output dependent on input pin "constant_four[24]"
-    Warning (15610): No output dependent on input pin "constant_four[25]"
-    Warning (15610): No output dependent on input pin "constant_four[26]"
-    Warning (15610): No output dependent on input pin "constant_four[27]"
-    Warning (15610): No output dependent on input pin "constant_four[28]"
-    Warning (15610): No output dependent on input pin "constant_four[29]"
-    Warning (15610): No output dependent on input pin "constant_four[30]"
-    Warning (15610): No output dependent on input pin "constant_four[31]"
-    Warning (15610): No output dependent on input pin "zero_5bits[0]"
-    Warning (15610): No output dependent on input pin "zero_5bits[1]"
-    Warning (15610): No output dependent on input pin "zero_5bits[2]"
-    Warning (15610): No output dependent on input pin "zero_5bits[3]"
-    Warning (15610): No output dependent on input pin "zero_5bits[4]"
+    Warning (15610): No output dependent on input pin "const_4[0]"
+    Warning (15610): No output dependent on input pin "const_4[1]"
+    Warning (15610): No output dependent on input pin "const_4[2]"
+    Warning (15610): No output dependent on input pin "const_4[3]"
+    Warning (15610): No output dependent on input pin "const_4[4]"
+    Warning (15610): No output dependent on input pin "const_4[5]"
+    Warning (15610): No output dependent on input pin "const_4[6]"
+    Warning (15610): No output dependent on input pin "const_4[7]"
+    Warning (15610): No output dependent on input pin "const_4[8]"
+    Warning (15610): No output dependent on input pin "const_4[9]"
+    Warning (15610): No output dependent on input pin "const_4[10]"
+    Warning (15610): No output dependent on input pin "const_4[11]"
+    Warning (15610): No output dependent on input pin "const_4[12]"
+    Warning (15610): No output dependent on input pin "const_4[13]"
+    Warning (15610): No output dependent on input pin "const_4[14]"
+    Warning (15610): No output dependent on input pin "const_4[15]"
+    Warning (15610): No output dependent on input pin "const_4[16]"
+    Warning (15610): No output dependent on input pin "const_4[17]"
+    Warning (15610): No output dependent on input pin "const_4[18]"
+    Warning (15610): No output dependent on input pin "const_4[19]"
+    Warning (15610): No output dependent on input pin "const_4[20]"
+    Warning (15610): No output dependent on input pin "const_4[21]"
+    Warning (15610): No output dependent on input pin "const_4[22]"
+    Warning (15610): No output dependent on input pin "const_4[23]"
+    Warning (15610): No output dependent on input pin "const_4[24]"
+    Warning (15610): No output dependent on input pin "const_4[25]"
+    Warning (15610): No output dependent on input pin "const_4[26]"
+    Warning (15610): No output dependent on input pin "const_4[27]"
+    Warning (15610): No output dependent on input pin "const_4[28]"
+    Warning (15610): No output dependent on input pin "const_4[29]"
+    Warning (15610): No output dependent on input pin "const_4[30]"
+    Warning (15610): No output dependent on input pin "const_4[31]"
+    Warning (15610): No output dependent on input pin "zero[0]"
+    Warning (15610): No output dependent on input pin "zero[1]"
+    Warning (15610): No output dependent on input pin "zero[2]"
+    Warning (15610): No output dependent on input pin "zero[3]"
+    Warning (15610): No output dependent on input pin "zero[4]"
 Info (21057): Implemented 39 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 39 input pins
     Info (21059): Implemented 0 output pins
 Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 8056 megabytes
-    Info: Processing ended: Sun Aug 16 11:33:29 2020
-    Info: Elapsed time: 00:00:51
-    Info: Total CPU time (on all processors): 00:00:43
+    Info: Peak virtual memory: 4761 megabytes
+    Info: Processing ended: Mon Aug 17 17:07:15 2020
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:05
 
 

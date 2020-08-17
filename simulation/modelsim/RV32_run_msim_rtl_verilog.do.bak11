@@ -64,7 +64,7 @@ vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFile
 vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/ALUctl.v}
 vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src {F:/WorkFiles/verilog/RV32/src/ALU.v}
 
-vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/simulation/modelsim {F:/WorkFiles/verilog/RV32/synthesis/simulation/modelsim/non_pipeline.vt}
+vlog -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim {F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim/non_pipeline.vt}
 
 vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work -voptargs="+acc"  non_pipeline_vlg_tst
 

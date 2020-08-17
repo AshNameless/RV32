@@ -13,6 +13,10 @@ Description:
 	控制单元, 根据当前指令以及ALU或操作数比较器的输出结
 	果(针对slt类以及branch类), 产生各个模块的控制信号.
 	
+	2020-8-17:
+	由于流水线实现中分支部分有独立的原件, 所以此单元的分支
+	相关信号在流水线中就不使用. 
+	
 **************************************************/
 
 `include "paras.v"
@@ -144,17 +148,19 @@ memory_rd, memory_wr, lb_w, reg_wr_src, PC_src);
 		casex(operation)
 			`JALR: PC_src <= 2'b10;
 			`AUIPC, `JAL: PC_src <= 2'b11;
-			`BEQ, `BNE, `BLT, `BLTU:  //BEQ BNE利用ALU eq ne操作, BLT BLTU利用比较器结果. 当结果为1时, 说明结果成立
+			`BEQ, `BNE, `BLT, `BLTU: begin //BEQ BNE利用ALU eq ne操作, BLT BLTU利用比较器结果. 当结果为1时, 说明结果成立
 			if(AB_relation == 1'b1)
 				PC_src <= 2'b11;
 			else
 				PC_src <= 2'b00;
+			end
 	
-			`BGE, `BGEU:  //利用比较器结果. 当结果为1时, 说明 A < B, 所以不跳转
+			`BGE, `BGEU: begin //利用比较器结果. 当结果为1时, 说明 A < B, 所以不跳转
 			if(AB_relation == 1'b1)
 				PC_src <= 2'b00;
 			else
 				PC_src <= 2'b11;
+			end
 			
 			default:  PC_src <= 2'b00;
 		endcase

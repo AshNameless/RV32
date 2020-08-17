@@ -1,0 +1,21 @@
+/************************************************* 
+ 
+Copyright:Call_Me_ZK
+
+File name:IDEX.v
+
+Author:ZK
+ 
+Date:2020-08-16
+ 
+Description:
+
+  ID_EX流水线寄存器
+  保存PC Instruction PC+4 rd_num1 rd_num2 wr_num
+  
+  当flush置位时说明EX阶段是分支指令且分支跳转, 上升沿
+  到来后该寄存器被清零, 同时PC被设置为跳转地址, 进入IF
+  阶段. 待下一个上升沿, IFID内部写入该指令信息, 进入ID
+  阶段. 
+
+**************************************************/

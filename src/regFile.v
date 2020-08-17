@@ -14,6 +14,10 @@ Description:
   x0恒为零。有两个读端口，一个写端口。读出是组合逻辑，
   给定地址可直接读取；写入随时钟同步，在时钟上升沿写入，
   此时恰好是PC将要变成下一条指令。
+  
+  2020-8-16:
+  为了适配流水线, 改为下降沿操作. 这样WB下降沿之后, 当前ID的指令
+  可以读出正确的值
 
 **************************************************/
 
@@ -42,7 +46,7 @@ module regFile
 	assign rd_data2 = registers[rd_num2];
 	
 	//寄存器复位及写入
-	always@(posedge clk or negedge rst_n) begin : write_to_reg
+	always@(negedge clk or negedge rst_n) begin : write_to_reg
 		integer i;
 		if(!rst_n) begin	//复位
 			for(i=0; i<reg_num; i=i+1)

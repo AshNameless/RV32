@@ -9,26 +9,26 @@ z2
 cModel Technology
 Z0 dF:/WorkFiles/verilog/RV32/simulation/modelsim
 T_opt
-!s110 1597549190
-Vb8FHeONmDNb:9<iWjY:Wl0
-Z1 04 20 4 work non_pipeline_vlg_tst fast 0
-=1-f48e38eb42e7-5f38aa86-72-b80
+!s110 1597650096
+V>_Jn:B<4@4_gJodFCANXW1
+Z1 04 16 4 work pipeline_vlg_tst fast 0
+=1-b88198d033e2-5f3a34ad-3cb-1934
 o-quiet -auto_acc_if_foreign -work work -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cyclonev_ver -L cyclonev_hssi_ver -L cyclonev_pcie_hip_ver -L rtl_work -L work +acc
 Z2 tCvgOpt 0
 n@_opt
 Z3 OL;O;10.5;63
 R0
 T_opt1
-!s110 1597549278
-VjgDDi;5ghI<J^jkMTc<:[3
+!s110 1597659193
+VNjeIf`3ISF1Kb?FKiW^U22
 R1
-=1-f48e38eb42e7-5f38aadd-3db-c2c
+=1-b88198d033e2-5f3a5839-27a-1344
 o-quiet -auto_acc_if_foreign -work work +acc
 R2
 n@_opt1
 R3
 vadder
-Z4 !s110 1597549188
+Z4 !s110 1597659071
 !i10b 1
 !s100 O`K91@OA1`;Ff7LJl:7TA1
 I[QQNe[SMFJRXGlImImn8a3
@@ -42,9 +42,9 @@ Z7 OL;L;10.5;63
 r1
 !s85 0
 31
-Z8 !s108 1597549188.000000
+Z8 !s108 1597659071.000000
 !s107 F:/WorkFiles/verilog/RV32/src/adder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/adder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/adder.v|
 !i113 0
 Z9 o-vlog01compat -work work -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 Z10 !s92 -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
@@ -66,7 +66,7 @@ r1
 31
 R8
 !s107 F:/WorkFiles/verilog/RV32/src/paras.v|F:/WorkFiles/verilog/RV32/src/ALU.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/ALU.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/ALU.v|
 !i113 0
 R9
 R10
@@ -89,7 +89,7 @@ r1
 31
 R8
 !s107 F:/WorkFiles/verilog/RV32/src/paras.v|F:/WorkFiles/verilog/RV32/src/ALUctl.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/ALUctl.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/ALUctl.v|
 !i113 0
 R9
 R10
@@ -112,12 +112,35 @@ r1
 31
 R8
 !s107 F:/WorkFiles/verilog/RV32/src/ALUSaGen.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/ALUSaGen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/ALUSaGen.v|
 !i113 0
 R9
 R10
 R2
 n@a@l@u@sa@gen
+vbranchHandler
+R4
+!i10b 1
+!s100 >o2_Uod^B^5cBMF]H6d=80
+I?FjdhYE:=VzV;Cj>XkOD@1
+R5
+R0
+w1597644187
+8F:/WorkFiles/verilog/RV32/src/branchHandler.v
+FF:/WorkFiles/verilog/RV32/src/branchHandler.v
+Z11 L0 29
+R7
+r1
+!s85 0
+31
+R8
+!s107 F:/WorkFiles/verilog/RV32/src/paras.v|F:/WorkFiles/verilog/RV32/src/branchHandler.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/branchHandler.v|
+!i113 0
+R9
+R10
+R2
+nbranch@handler
 vcomparator
 R4
 !i10b 1
@@ -128,42 +151,42 @@ R0
 w1596971741
 8F:/WorkFiles/verilog/RV32/src/comparator.v
 FF:/WorkFiles/verilog/RV32/src/comparator.v
-Z11 L0 20
+Z12 L0 20
 R7
 r1
 !s85 0
 31
-R8
+Z13 !s108 1597659070.000000
 !s107 F:/WorkFiles/verilog/RV32/src/comparator.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/comparator.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/comparator.v|
 !i113 0
 R9
 R10
 R2
 vcontrol
-R4
+Z14 !s110 1597659070
 !i10b 1
-!s100 VQ>m;NbnXWQbIYAK_PJfU0
-IjGC`9B1o57[ZR2Nz125]S0
+!s100 1RFdA2k7fm7:7LllTDkU=0
+IT8NUUkWiHoE>XUWh@iYD;3
 R5
 R0
-w1597464529
+w1597632694
 8F:/WorkFiles/verilog/RV32/src/control.v
 FF:/WorkFiles/verilog/RV32/src/control.v
-R11
+Z15 L0 24
 R7
 r1
 !s85 0
 31
-R8
+R13
 !s107 F:/WorkFiles/verilog/RV32/src/paras.v|F:/WorkFiles/verilog/RV32/src/control.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/control.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/control.v|
 !i113 0
 R9
 R10
 R2
 vdataModifier
-R4
+R14
 !i10b 1
 !s100 <<38BQ^WPTZei3^ona?UQ0
 I:TP8eiCUgN6RKij^]5ZOf2
@@ -172,21 +195,135 @@ R0
 w1597042104
 8F:/WorkFiles/verilog/RV32/src/dataModifier.v
 FF:/WorkFiles/verilog/RV32/src/dataModifier.v
-Z12 L0 19
+Z16 L0 19
 R7
 r1
 !s85 0
 31
-R8
+R13
 !s107 F:/WorkFiles/verilog/RV32/src/dataModifier.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/dataModifier.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/dataModifier.v|
 !i113 0
 R9
 R10
 R2
 ndata@modifier
+vEXMEM
+R14
+!i10b 1
+!s100 b5LY?Yij9Plz9_JOfoc7m1
+I4nQ50660lP>JzeTmgQ;TL0
+R5
+R0
+w1597581804
+8F:/WorkFiles/verilog/RV32/src/pipeline_regs/EXMEM.v
+FF:/WorkFiles/verilog/RV32/src/pipeline_regs/EXMEM.v
+R11
+R7
+r1
+!s85 0
+31
+R13
+!s107 F:/WorkFiles/verilog/RV32/src/pipeline_regs/EXMEM.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/pipeline_regs/EXMEM.v|
+!i113 0
+R9
+Z17 !s92 -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+n@e@x@m@e@m
+vfoward
+R14
+!i10b 1
+!s100 YOan5MB8YZVRN5cS`H<l92
+I1=G8Y<HAE[VGoIolK4<J:0
+R5
+R0
+w1597659037
+8F:/WorkFiles/verilog/RV32/src/foward.v
+FF:/WorkFiles/verilog/RV32/src/foward.v
+L0 34
+R7
+r1
+!s85 0
+31
+R13
+!s107 F:/WorkFiles/verilog/RV32/src/foward.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/foward.v|
+!i113 0
+R9
+R10
+R2
+vhazardDetect
+R14
+!i10b 1
+!s100 HGSAU:lPCUl^dn>cig1`b3
+IlHU0DGn^^lYld3A`_k8NB0
+R5
+R0
+w1597635765
+8F:/WorkFiles/verilog/RV32/src/hazardDetect.v
+FF:/WorkFiles/verilog/RV32/src/hazardDetect.v
+Z18 L0 28
+R7
+r1
+!s85 0
+31
+R13
+!s107 F:/WorkFiles/verilog/RV32/src/hazardDetect.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/hazardDetect.v|
+!i113 0
+R9
+R10
+R2
+nhazard@detect
+vIDEX
+R14
+!i10b 1
+!s100 ?Z]VYAW:jKRVBP:kUlK;80
+IbKIPE[G;c7H:9Kn]aeNPX0
+R5
+R0
+w1597637475
+8F:/WorkFiles/verilog/RV32/src/pipeline_regs/IDEX.v
+FF:/WorkFiles/verilog/RV32/src/pipeline_regs/IDEX.v
+L0 26
+R7
+r1
+!s85 0
+31
+Z19 !s108 1597659069.000000
+!s107 F:/WorkFiles/verilog/RV32/src/pipeline_regs/IDEX.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/pipeline_regs/IDEX.v|
+!i113 0
+R9
+R17
+R2
+n@i@d@e@x
+vIFID
+Z20 !s110 1597659069
+!i10b 1
+!s100 HUC0968KPFIMj<aC7AV0X3
+I9iKjmYlLCAGDh0CT8UW5h2
+R5
+R0
+w1597646880
+8F:/WorkFiles/verilog/RV32/src/pipeline_regs/IFID.v
+FF:/WorkFiles/verilog/RV32/src/pipeline_regs/IFID.v
+L0 25
+R7
+r1
+!s85 0
+31
+R19
+!s107 F:/WorkFiles/verilog/RV32/src/pipeline_regs/IFID.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/pipeline_regs/IFID.v|
+!i113 0
+R9
+R17
+R2
+n@i@f@i@d
 vimmGen
-R4
+R20
 !i10b 1
 !s100 jFiIdeY?Bfj@DI3S45Z_32
 I8OHNzM`HnTb8MM]8MzLVf0
@@ -200,16 +337,16 @@ R7
 r1
 !s85 0
 31
-Z13 !s108 1597549187.000000
+R19
 !s107 F:/WorkFiles/verilog/RV32/src/immGen.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/immGen.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/immGen.v|
 !i113 0
 R9
 R10
 R2
 nimm@gen
 vinstMem
-Z14 !s110 1597549187
+R20
 !i10b 1
 !s100 gR]:0LfZWCb?^;A;WFGzD2
 Ig=zFJ0JkYd?kYYgK9eZ2>1
@@ -223,16 +360,16 @@ R7
 r1
 !s85 0
 31
-R13
+R19
 !s107 F:/WorkFiles/verilog/RV32/src/instMem.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/instMem.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/instMem.v|
 !i113 0
 R9
 R10
 R2
 ninst@mem
 vLSBextract
-R14
+R20
 !i10b 1
 !s100 gnl>>nPZC2m:fP=X9HoUd3
 IW3?EZ8O@=zb[=kK`I_JiM0
@@ -241,21 +378,21 @@ R0
 w1597046392
 8F:/WorkFiles/verilog/RV32/src/LSBextract.v
 FF:/WorkFiles/verilog/RV32/src/LSBextract.v
-Z15 L0 17
+Z21 L0 17
 R7
 r1
 !s85 0
 31
-R13
+R19
 !s107 F:/WorkFiles/verilog/RV32/src/LSBextract.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/LSBextract.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/LSBextract.v|
 !i113 0
 R9
 R10
 R2
 n@l@s@bextract
 vmemory
-R14
+R20
 !i10b 1
 !s100 E`>JGBEFDTK4VfMkKDm7i3
 IUDn=QPU[fObk>Z6ooeOHA3
@@ -264,20 +401,43 @@ R0
 w1597459661
 8F:/WorkFiles/verilog/RV32/src/memory.v
 FF:/WorkFiles/verilog/RV32/src/memory.v
+R16
+R7
+r1
+!s85 0
+31
+R19
+!s107 F:/WorkFiles/verilog/RV32/src/memory.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/memory.v|
+!i113 0
+R9
+R10
+R2
+vMEMWB
+Z22 !s110 1597659068
+!i10b 1
+!s100 eEiNH@fidFBo]T?bnnFGh3
+ILVnX=8lne5JK:IlA]:6_S2
+R5
+R0
+w1597581608
+8F:/WorkFiles/verilog/RV32/src/pipeline_regs/MEMWB.v
+FF:/WorkFiles/verilog/RV32/src/pipeline_regs/MEMWB.v
 R12
 R7
 r1
 !s85 0
 31
-R13
-!s107 F:/WorkFiles/verilog/RV32/src/memory.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/memory.v|
+Z23 !s108 1597659068.000000
+!s107 F:/WorkFiles/verilog/RV32/src/pipeline_regs/MEMWB.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src/pipeline_regs|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/pipeline_regs/MEMWB.v|
 !i113 0
 R9
-R10
+R17
 R2
+n@m@e@m@w@b
 vmul2t1
-R14
+R22
 !i10b 1
 !s100 ?7g2S7]=5Qef4`ZUP;E6V2
 IP80<JiJdXjfecnHZcAGob1
@@ -286,20 +446,20 @@ R0
 w1597045225
 8F:/WorkFiles/verilog/RV32/src/mul2t1.v
 FF:/WorkFiles/verilog/RV32/src/mul2t1.v
-Z16 L0 15
+Z24 L0 15
 R7
 r1
 !s85 0
 31
-R13
+R23
 !s107 F:/WorkFiles/verilog/RV32/src/mul2t1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/mul2t1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/mul2t1.v|
 !i113 0
 R9
 R10
 R2
 vmul3t1
-R14
+R22
 !i10b 1
 !s100 ;WUKoa3Y^V6>Gj06MbE1P0
 IljIBM`ag^0oUL^<=Y2_Ho3
@@ -308,110 +468,110 @@ R0
 w1597045415
 8F:/WorkFiles/verilog/RV32/src/mul3t1.v
 FF:/WorkFiles/verilog/RV32/src/mul3t1.v
-R16
+R24
 R7
 r1
 !s85 0
 31
-R13
+R23
 !s107 F:/WorkFiles/verilog/RV32/src/mul3t1.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/mul3t1.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/mul3t1.v|
 !i113 0
 R9
 R10
-R2
-vnon_pipeline
-Z17 !s110 1597549186
-!i10b 1
-!s100 bdi1WzRcA^YKeX_YUKTDV0
-IWf3Hz0z5c2<]VMCOT<^=L2
-R5
-R0
-w1597462779
-8F:/WorkFiles/verilog/RV32/src/non_pipeline.v
-FF:/WorkFiles/verilog/RV32/src/non_pipeline.v
-R12
-R7
-r1
-!s85 0
-31
-Z18 !s108 1597549186.000000
-!s107 F:/WorkFiles/verilog/RV32/src/non_pipeline.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/non_pipeline.v|
-!i113 0
-R9
-R10
-R2
-vnon_pipeline_vlg_tst
-!s110 1597549189
-!i10b 1
-!s100 Cgg;MB:PICC]fgGRh4Q^E3
-I:^=RVC1OYmlL=8_H^n3:I0
-R5
-R0
-w1597547220
-8F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim/non_pipeline.vt
-FF:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim/non_pipeline.vt
-L0 28
-R7
-r1
-!s85 0
-31
-R8
-!s107 F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim/non_pipeline.vt|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim|F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim/non_pipeline.vt|
-!i113 0
-R9
-!s92 -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
 R2
 vPC
-R14
+R22
 !i10b 1
-!s100 nLl@KMb0=bPFe8BW:g4E91
-I3;Jn0=gjj`JOjJE<4SzVW2
+!s100 dMjOaV3DC?K4_0;k1bbB10
+I0E2c_ElFHfNP_5c1YjH0`3
 R5
 R0
-w1596786424
+w1597582014
 8F:/WorkFiles/verilog/RV32/src/PC.v
 FF:/WorkFiles/verilog/RV32/src/PC.v
-R6
+L0 23
 R7
 r1
 !s85 0
 31
-R13
+R23
 !s107 F:/WorkFiles/verilog/RV32/src/PC.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/PC.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/PC.v|
 !i113 0
 R9
 R10
 R2
 n@p@c
-vregFile
-R14
+vpipeline
+R22
 !i10b 1
-!s100 S:NMdC1^Ihn]D@SlOdzeN0
-Ii^RS?XTeEEme4`:zHQl8P2
+!s100 IZN;Hi^>UX`:mzzAjH6951
+I4VX^OSQLE0VOcM=LnaBYD1
 R5
 R0
-w1596791185
-8F:/WorkFiles/verilog/RV32/src/regFile.v
-FF:/WorkFiles/verilog/RV32/src/regFile.v
-R11
+w1597651887
+8F:/WorkFiles/verilog/RV32/src/pipeline.v
+FF:/WorkFiles/verilog/RV32/src/pipeline.v
+R16
 R7
 r1
 !s85 0
 31
-R13
+Z25 !s108 1597659067.000000
+!s107 F:/WorkFiles/verilog/RV32/src/pipeline.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/pipeline.v|
+!i113 0
+R9
+R10
+R2
+vpipeline_vlg_tst
+!s110 1597659191
+!i10b 1
+!s100 6doP<YWB6VZE^jiBfEodk0
+I:U<e[BY@^j4zLR[2f1hXA2
+R5
+R0
+w1597659186
+8F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt
+FF:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt
+R18
+R7
+r1
+!s85 0
+31
+!s108 1597659191.000000
+!s107 F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/simulation/modelsim/pipeline.vt|
+!i113 0
+R9
+!s92 -vlog01compat -work work +incdir+F:/WorkFiles/verilog/RV32/synthesis/../simulation/modelsim -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+R2
+vregFile
+Z26 !s110 1597659067
+!i10b 1
+!s100 KC;N^3T5OU[?AVXjkN?Ec0
+IObdkK[YY2eL4IheiU]L]U2
+R5
+R0
+w1597581913
+8F:/WorkFiles/verilog/RV32/src/regFile.v
+FF:/WorkFiles/verilog/RV32/src/regFile.v
+R15
+R7
+r1
+!s85 0
+31
+R25
 !s107 F:/WorkFiles/verilog/RV32/src/regFile.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/regFile.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/regFile.v|
 !i113 0
 R9
 R10
 R2
 nreg@file
 vregnumDecoder
-R17
+R26
 !i10b 1
 !s100 4>k>2BN=cU:_:Ve0HbjGP0
 IPZgf0nhW?bLc25f:5lDDD3
@@ -420,14 +580,14 @@ R0
 w1597462693
 8F:/WorkFiles/verilog/RV32/src/regnumDecoder.v
 FF:/WorkFiles/verilog/RV32/src/regnumDecoder.v
-R15
+R21
 R7
 r1
 !s85 0
 31
-R18
+R25
 !s107 F:/WorkFiles/verilog/RV32/src/regnumDecoder.v|
-!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|F:/WorkFiles/verilog/RV32/src/regnumDecoder.v|
+!s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+F:/WorkFiles/verilog/RV32/src|-L|mtiAvm|-L|mtiRnm|-L|mtiOvm|-L|mtiUvm|-L|mtiUPF|-L|infact|F:/WorkFiles/verilog/RV32/src/regnumDecoder.v|
 !i113 0
 R9
 R10
